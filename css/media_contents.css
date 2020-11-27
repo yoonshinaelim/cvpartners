@@ -1,0 +1,101 @@
+@media screen and (max-width:720px){
+/* common */
+.content_wrap{padding: 40px;}
+
+
+
+/* tbl_wrap */
+.tbl_wrap table tr{display:block;}
+.tbl_wrap table th{display:block;width:100%;border-left:none;}
+.tbl_wrap table td{display:block;width:100%;border-left:none;line-height: 38px;}
+.tbl_wrap table td .input_cal02 .cal_date{width:70%;}
+.tbl_wrap table td .txt_wave{margin: 0 5px;}
+.tbl_wrap table td .btn_custom02{display:block;margin: 0;}
+.tbl_wrap table td .cal_sel.w_140{width:40%;margin-bottom: 10px;}
+
+/* horizontal */
+.tbl_wrap.horizontal table tr{display:block;position:relative;border-bottom: 1px solid #D4D8DB;padding: 10px;}
+.tbl_wrap.horizontal table thead{display:none;}
+.tbl_wrap.horizontal table td{display: inline-block;position:relative;padding:0 10px;border: none;line-height: 38px;}
+
+/* flex0 */
+.tbl_wrap.horizontal.flex0 table thead{display:table-cell;}
+.tbl_wrap.horizontal.flex0 table tr{display:flex;border-bottom: 1px solid #D4D8DB;padding:0;}
+.tbl_wrap.horizontal.flex0 table th,
+.tbl_wrap.horizontal.flex0 table td{display:flex;width:100%;flex-grow: 1;border-left:1px solid #D4D8DB;border-bottom:none;justify-content: center;align-items: center;}
+.tbl_wrap.horizontal.flex0 table th:first-of-type,
+.tbl_wrap.horizontal.flex0 table td:first-of-type{border-left:none;}
+
+/* flex01 */
+.tbl_wrap.horizontal.flex01 table td:nth-child(1){width: 30px;background: url(../images/contents/bg_num.png) top 8px center no-repeat;}
+.tbl_wrap.horizontal.flex01 table td:nth-child(3):before{content: '';display:block;position:absolute;top:14px;left:0;width:1px;height:13px;background:#C4C4C4;}
+.tbl_wrap.horizontal.flex01 table td:nth-child(4){padding-left: 55px;font-size: 14px;}
+.tbl_wrap.horizontal.flex01 table td:nth-child(4):before{content: '기관명';display:block;position:absolute;top:0;left:10px;width:auto;height:auto;font-size: 14px;color:#666;}
+.tbl_wrap.horizontal.flex01 table td:nth-child(5){padding-left: 55px;font-size: 14px;}
+.tbl_wrap.horizontal.flex01 table td:nth-child(5):before{content: '부서명';display:block;position:absolute;top:0;left:10px;width:auto;height:auto;font-size: 14px;color:#666;}
+
+/* flex02 */
+.tbl_wrap.horizontal.flex02 table td:nth-child(1){width: 30px;background: url(../images/contents/bg_num.png) top 8px center no-repeat;}
+.tbl_wrap.horizontal.flex02 table td:nth-child(3):before,
+.tbl_wrap.horizontal.flex02 table td:nth-child(4):before{content: '';display:block;position:absolute;top:14px;left:0;width:1px;height:13px;background:#C4C4C4;}
+.tbl_wrap.horizontal.flex02 table td:nth-child(5){padding-left: 65px;font-size: 14px;}
+.tbl_wrap.horizontal.flex02 table td:nth-child(5):before{content: '회의실명';display:block;position:absolute;top:0;left:10px;width:auto;height:auto;font-size: 14px;color:#666;}
+.tbl_wrap.horizontal.flex02 table td:nth-child(6){padding-left: 55px;font-size: 14px;}
+.tbl_wrap.horizontal.flex02 table td:nth-child(6):before{content: '연락처';display:block;position:absolute;top:0;left:10px;width:auto;height:auto;font-size: 14px;color:#666;}
+
+/* sort_wrap */
+.sort_wrap{padding: 30px;}
+.sort_wrap ul{display:block;}
+.sort_wrap li{display:block;width: 100%;margin-top: 10px;margin-left: 0;text-align: left;}
+.sort_wrap li:first-of-type{margin-top: 0;}
+.sort_wrap li:nth-child(2) .sort_tit,
+.sort_wrap li:nth-child(3) .sort_tit{display: none;}
+.sort_wrap li:nth-child(2) .sort_cont{width: 100%;}
+.sort_wrap li:nth-child(3) .sort_cont{width:-webkit-calc(100% - 106px);width:calc(100% - 106px);}
+.sort_wrap .sort_tit{display:inline-block;margin:0 20px;}
+.sort_wrap .sort_cont{display:inline-block;}
+.sort_wrap .sort_sel_cont{display:inline-block;width:100%;}
+
+/* modal_wrap */
+.modal_wrap .madal{width: 90%;left: 5%;margin-left: 0;padding: 10px 20px 20px 20px;right: 5%;}
+
+/* search_wrap */
+.search_wrap{margin-top:0;}
+.search_wrap .fl_r span:nth-child(1){display:block;width:100%;margin:0 0 10px 0;}
+.search_wrap .fl_r span:nth-child(2){width:30%;margin-left:0;}
+.search_wrap .fl_r span:nth-child(3){width:35%;}
+.search_wrap .fl_r span:nth-child(4){width:20%;}
+.process_wrap .obj_box .lower{padding:0;}
+
+/* schedule_wrap */
+.schedule_wrap{padding:0 40px 40px;}
+.schedule_search_box{position:relative;}
+.schedule_search_box .select_area{float: none;width:100%;padding: 30px 30px 80px;text-align-last:left;}
+.schedule_search_box .select_area .box,
+.schedule_search_box .select_area .box:first-child{display:block;margin: 0;}
+.schedule_search_box .inp_radio_box{margin: 0;}
+.schedule_search_box .inp_radio_box label{font-size: 14px;margin-right: 5px;padding-left: 25px;}
+.schedule_search_box .tit{width:80px;}
+.schedule_search_box .inp_select_box{width:-webkit-calc(100% - 85px);width:calc(100% - 85px);}
+.schedule_search_box .btn_area{float: none;position:absolute;left:50%;bottom:23px;margin:0 0 0 -46px;}
+.schedule_search_box .btn_area .btn_search{width:93px;height:40px;background: linear-gradient(180deg, #7593FF 30.73%, #6C7DD9 100%);box-shadow: 1px 2px 0px #FFFFFF;border-radius: 20px;color:#fff;}
+.schedule_box{margin-top: 40px;}
+.schedule_box .tit{padding-top: 40px;}
+.room_type_box{display:block;margin-top: 20px;}
+.room_type_box .inp_select_box{width: 100%;}
+.room_type_info{line-height:40px;background: #fff;margin-top: 20px;border-radius: 10px;padding: 0 20px;}
+.room_type_info dt{display:inline-block;font-size: 12px;color: #555555;font-weight: 300;}
+.room_type_info dd{display:inline-block;font-size: 12px;color: #555555;font-weight: 500;margin-left: 10px;}
+.conference_list > li{display:none;}
+.conference_list > li:first-child{display:block;}
+.conference_list .room_number_tit{display:none;}
+.conference_list .schedule_chk_box{width:100%;padding:40px 40px 10px;height:auto;}
+.schedule_chk_box .cont{padding: 0;margin: 0;}
+.schedule_chk_box .time_list li{width:100%;height:30px;text-indent:0;font-size:14px;line-height:0;}
+.schedule_chk_box .time_list li:nth-child(odd):after{width:-webkit-calc(100% - 60px);width:calc(100% - 60px);height: 2px;left:auto;right:0;bottom:auto;top:0px;}
+.schedule_chk_box .time_list li:nth-child(even):after{width:-webkit-calc(100% - 60px);width:calc(100% - 60px);height: 1px;left:auto;right:0;bottom:auto;top:0px;}
+.schedule_chk_box .sel_area{width:-webkit-calc(100% - 60px);width:calc(100% - 60px);height:120px;left:auto;right:0;bottom:auto;top:60px;}
+.schedule_chk_box .sel_area .info{position:absolute;top:50%;margin-top:-20px;padding:0;}
+.schedule_chk_box .sel_area .time{position:absolute;top:50%;}
+
+}/* //미디어쿼리 종료 */

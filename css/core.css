@@ -1,0 +1,22 @@
+html,body{height:100%;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, button, h1, h2, h3, h4, h5, h6, th, td, input, select, textarea, span, em, strong, b, i{box-sizing: border-box;line-height:1.5; margin:0; padding:0; color:#404040; font-size:16px; font-weight:400; font-family:'Montserrat','Noto Sans KR', Arial, sans-serif; font-style: normal;}
+ul, ol, dl, dt, dd{margin:0; padding:0; list-style:none;}
+img{border:none;}
+hr{display:none;}
+fieldset{border:none;}
+legend{display:none;}
+p{margin:0;}
+a{text-decoration:none;color:#333;}
+table{table-layout:fixed; border-collapse:collapse; border-spacing:0;}
+table caption{overflow:hidden; position:relative; line-height:1px; font-size:1px; text-indent:-30000px;}
+.none{display:none !important;}
+.hidden{overflow:hidden; position:absolute; top:0; left:-30000px; line-height:1px; font-size:1px;}
+
+/* ellipsis */
+.ellipsis{display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.ellipsis_multi{display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;}/* 기본 3줄 */
+
+/* float */
+.clearfix:after{content:'';display:table;clear:both;}
+.fl_l{float:left !important;}
+.fl_r{float:right !important;}
