@@ -1,5 +1,5 @@
 html,body{height:100%;}
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, button, h1, h2, h3, h4, h5, h6, th, td, input, select, textarea, span, em, strong, b, i{box-sizing: border-box;line-height:1.5; margin:0; padding:0; color:#404040; font-size:16px; font-weight:400; font-family:'Montserrat','Noto Sans KR', Arial, sans-serif; font-style: normal;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, button, h1, h2, h3, h4, h5, h6, th, td, input, select, textarea, span, em, strong, b, i{box-sizing: border-box;line-height:1.5; margin:0; padding:0; color:#000; font-size:16px; font-weight:400; font-family:'Montserrat','Noto Sans KR', Arial, sans-serif; font-style: normal;}
 ul, ol, dl, dt, dd{margin:0; padding:0; list-style:none;}
 img{border:none;}
 hr{display:none;}
@@ -20,3 +20,7 @@ table caption{overflow:hidden; position:relative; line-height:1px; font-size:1px
 .clearfix:after{content:'';display:table;clear:both;}
 .fl_l{float:left !important;}
 .fl_r{float:right !important;}
+
+
+/* media */
+.mb{display:none;}

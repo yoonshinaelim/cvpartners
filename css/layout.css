@@ -1,0 +1,22 @@
+/* HEAD */
+.header {height:90px;}
+.header .header_wrap{max-width:1170px;width:100%;margin:0 auto;height:90px;position:relative;}
+.header .logo{position:absolute;top:50%;margin-top:-15px;left:0;}
+.header .topmenu{position:absolute;top:50%;margin-top:-10px;right:155px;z-index:10;}
+.header .topmenu > li{float:left;margin-left:70px;position:relative;}
+.header .topmenu > li:first-child{margin-left:0;}
+.header .topmenu > li > a {font-size:16px;color:#000;font-weight:bold;}
+.header .submenu{position:absolute;left:-50px;width:500px;top:70px;height:50px;display:none;}
+.header .submenu > li{float:left;position:relative;padding-left:10px;margin-left:10px;}
+.header .submenu > li:first-child{padding-left:0;margin-left:0;}
+.header .submenu > li:first-child:before{display:none;}
+.header .submenu > li:before{content:'';position:absolute;display:block;width:1px;height:7px;background:#ababab;top:50%;margin-top:-3px;left:0;}
+.header .submenu > li > a:hover{color:#ed174d;}
+.header .submenubox{width:100%;height:55px;z-index:1;top:90px;position:absolute;background:#fff;}
+.header .mypage{position:absolute;top:50%;margin-top:-10px;right:0;}
+.header .mypage .btn{display:inline-block;width:105px;height:32px;line-height:32px;text-align:center;background:#4a4c57;color:#fff;border-radius:3px;}
+.header .mypage .cont{display:none;}
+
+/* CONTENT */
+
+/* FOOT */
