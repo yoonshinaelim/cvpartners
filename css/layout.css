@@ -98,7 +98,7 @@
 
 .recruit_challenge_box{position:relative;height:440px;margin:100px 0;}
 .recruit_challenge_box .cont{overflow:hidden;max-width:1545px;width:100%;height:440px;position:absolute;right:0;transition:all .3s;}
-.recruit_challenge_box .info_box{width:370px;border-top:3px solid #ed174d;border-bottom:1px solid #d8d8d8;height:440px;float:left;margin-right:100px;}
+.recruit_challenge_box .info_box{width:370px;border-top:3px solid #ed174d;border-bottom:1px solid #d8d8d8;height:440px;float:left;margin-right:100px;transition:all .3s;}
 .recruit_challenge_box .info_box .txt{font-size:40px;margin-top:50px;padding:0 50px;}
 .recruit_challenge_box .info_box .bot{position:absolute;bottom:150px;}
 .recruit_challenge_box .info_box .company{font-size:16px;padding:0 50px;display:block;}
@@ -110,14 +110,21 @@
 .recruit_challenge_box .info_box .fraction .btn_prev,.recruit_challenge_box .info_box .fraction .btn_next{font-size:0;color:transparent;vertical-align:middle;}
 .recruit_challenge_box .info_box .fraction .btn_prev{display:inline-block;width:21px;height:12px;background:url(../images/contents/btn_recruit_prev.png) no-repeat 0 0;margin-right:5px;}
 .recruit_challenge_box .info_box .fraction .btn_next{display:inline-block;width:21px;height:12px;background:url(../images/contents/btn_recruit_next.png) no-repeat 0 0;margin-left:5px;}
-.challengeSlider .swiper-slide{width:700px ;background:#fef4f6;}
-.challengeSlider{float:left;width:-webkit-calc(100% - 470px);width:calc(100% - 470px);padding-right:100px;}
+.swiper_box{float:left;width:-webkit-calc(100% - 470px);width:calc(100% - 470px);}
+.challengeSlider .swiper-wrapper{margin-left:-180px;}
+@media screen and (max-width:1500px){
+    .challengeSlider .swiper-wrapper{margin-left:0;}
+}
+.challengeSlider .swiper-slide{width:700px ;background:rgba(0,0,0,0.2);position:relative;transition:all .3s;}
+.challengeSlider .swiper-slide.swiper-slide-active{background:#fef4f6;transition:all .3s;}
+.challengeSlider .swiper-slide.swiper-slide-active .profile .img{background:transparent;}
+.challengeSlider .swiper-slide.swiper-slide-active .profile .img img{opacity:1;}
 .challengeSlider .swiper-slide .info{display:none;}
-.challengeSlider .swiper-slide .profile{width:700px;height:440px;}
-.challengeSlider .swiper-slide .profile .img{width:330px;height:440px;float:left;}
-.challengeSlider .swiper-slide .profile .img img{width:100%;height:100%;}
+.challengeSlider .swiper-slide .profile{width:700px;height:440px;position:relative;}
+.challengeSlider .swiper-slide .profile .img{width:330px;height:440px;float:left;background:#000;}
+.challengeSlider .swiper-slide .profile .img img{width:100%;height:100%;opacity:0.8;}
 .challengeSlider .swiper-slide .profile .txt_area{float:left;width:370px;}
-.challengeSlider .swiper-slide .profile .txt_area .txt{padding:110px 50px 0;color:#666;line-height:26px;font-size:16px;}
+.challengeSlider .swiper-slide .profile .txt_area .txt{padding:110px 50px 0;color:#666;line-height:26px;font-size:16px;overflow:hidden;display:-webkit-box;text-overflow:ellipsis;-webkit-line-clamp:7;-webkit-box-orient:vertical;}
 .challengeSlider .swiper-slide .profile .txt_area .btn{padding:0 50px;margin-top:30px;}
 .challengeSlider .swiper-slide .profile .txt_area .btn .btn_more{text-align:center;display:inline-block;width:100px;height:40px;line-height:40px;border:1px solid #cbc3c5;}
 .challengeSlider .swiper-slide .profile .txt_area .btn .btn_more span{display:inline-block;padding-right:10px;position:relative;}
@@ -180,6 +187,6 @@
 .footer .foot_info .family_link{width:180px;float:right;margin-left:40px;position:relative;}
 .footer .foot_info .family_link .btn{display:inline-block;width:100%;height:40px;border:1px solid #5c5c5c;text-align:center;text-align:center;box-sizing:border-box;}
 .footer .foot_info .family_link .btn span{position:relative;padding-right:30px;color:#888;line-height:40px;font-size:14px;}
-.footer .foot_info .family_link .btn span:after{content:'';display:inline-block;width:9px;height:5px;background:url(../images/contents/ico_select.png) no-repeat 0 0;position:absolute;right:0;top:50%;margin-top:=3px;}
+.footer .foot_info .family_link .btn span:after{content:'';display:inline-block;width:9px;height:5px;background:url(../images/contents/ico_select.png) no-repeat 0 0;position:absolute;right:0;top:50%;margin-top:-3px;}
 .footer .foot_info .family_link .list{width:100%;border:1px solid #5c5c5c;padding:20px;border-top:0;z-index:10;position:absolute;top:39px;left:0;background:#333;display:none;}
 .footer .foot_info .family_link .list li a{color:#888;font-size:14px;}

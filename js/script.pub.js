@@ -48,25 +48,45 @@
             var $company = $challenge.find('.company');
             var $name = $challenge.find('.name');
             var challengeSlider = new Swiper('.challengeSlider', {
-                slidesPerView: '1',
+                slidesPerView: 'auto',
                 spaceBetween: 70,
+                centeredSlides: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
                 on : {
                     init : function(swiper){
                         var num = swiper.slides.length;
+                        var $active = $('.challengeSlider .swiper-slide-active');
+                        var txt = $active.find('.info .txt').text();
+                        var company = $active.find('.info .company').text();
+                        var name = $active.find('.info .name').text();
                         $count.text(1);
                         $num.text(num);
+                        $txt.text(txt);
+                        $company.text(company);
+                        $name.text(name);
                     },
                     slideChange : function(swiper){
                         var idx = swiper.realIndex+1;
                         $count.text(idx);
-                        console.log(idx);
+                    },
+                    slideChangeTransitionStart :function(){
+                        var $active = $('.challengeSlider .swiper-slide-active');
+                        var txt = $active.find('.info .txt').text();
+                        var company = $active.find('.info .company').text();
+                        var name = $active.find('.info .name').text();
+                        $txt.text(txt);
+                        $company.text(company);
+                        $name.text(name);
                     }
                 }
               });
-            $('.recruit_challenge_box .btn_next').on('click',function(){
+              $challenge.find('.btn_next').on('click',function(){
                 challengeSlider.slideNext();
             });
-            $('.recruit_challenge_box .btn_prev').on('click',function(){
+            $challenge.find('.btn_prev').on('click',function(){
                 challengeSlider.slidePrev();
             });
         }
