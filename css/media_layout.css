@@ -38,6 +38,8 @@
 .header .mb_menu .btn_area{position:absolute;width:100%;background:#ed174d;left:0;padding:0 0 100px;z-index:10;text-align:center;}
 .header .mb_menu .btn_area a.btn_modify,
 .header .mb_menu .btn_area a.btn_logout{background:#be123e;color:#fff;width:120px;height:30px;line-height:30px;text-align:center;display:inline-block;font-size:12px;border:0;border-radius:0;margin-top:0;}
+/* CONTAINER */
+.container{padding-top:60px;}
 /* FOOT */
 .footer .scrollbox{width:80%;overflow-x:scroll;}
 .footer .foot_loaction{padding:30px 0;}

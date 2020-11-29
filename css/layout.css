@@ -1,7 +1,7 @@
 
 .wrap{overflow:hidden;}
 /* HEAD */
-.header {height:90px;}
+.header {height:90px;border-bottom:1px solid #cfcfcf;position:absolute;width:100%;z-index:999;}
 .header .header_wrap{max-width:1170px;width:100%;margin:0 auto;height:90px;position:relative;}
 .header .logo{position:absolute;top:50%;margin-top:-15px;left:0;}
 .header .topmenu{position:absolute;top:50%;margin-top:-10px;right:155px;z-index:10;}
@@ -30,7 +30,7 @@
 .header .mypage .cont .box a.btn_logout{color:#bfe10e;margin-top:20px;font-size:15px;border:1px solid #bfe10e;width:105px;height:30px;line-height:30px;text-align:center;display:inline-block;border-radius:15px;}
 
 /* CONTENT */
-.container{width:100%;}
+.container{width:100%;padding-top:90px;}
 .container .content{width:100%;}
 
 /* FOOT */
