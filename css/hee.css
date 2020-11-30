@@ -37,11 +37,11 @@ textarea:focus{border: 1px solid #576170;}
 /* button */
 button{display:inline-block;cursor: pointer;outline:none;border:none;box-sizing:border-box;vertical-align: middle;}
 button span{vertical-align: middle;}
-.button{height:60px;border-radius: 1px;background:#ed174d;;font-size: 18px;}
+.button{height:60px;border-radius: 1px;background:#ed174d;;font-size: 18px;padding: 0 50px;}
 .button span{color:#fff}
-.btn_area{display:flex;margin-top: 20px;}
-.btn_area button{flex:1; margin-left: 10px;}
-.btn_area button:first-of-type{margin-left: 0;}
+.btn_area_100p{display:flex;margin-top: 20px;}
+.btn_area_100p button{flex:1; margin-left: 10px;}
+.btn_area_100p button:first-of-type{margin-left: 0;}
 
 /* tab_wrap */
 .tab_wrap{width:1030px;margin: 0 auto;}
@@ -55,9 +55,7 @@ button span{vertical-align: middle;}
 
 /* mypage_wrap */
 .mypage_wrap{padding: 80px 0 200px 0;background: #f8f8fc;}
-
 .mypage_wrap .tab_content{padding: 60px 0 0 0;}
-
 .mypage_wrap .tab_content .cont_tit{font-size: 24px;line-height: 36px;text-align: center;}
 .mypage_wrap .tab_content .form_wrap{padding: 60px 0 0 0;}
 
@@ -70,3 +68,6 @@ button span{vertical-align: middle;}
 .form_wrap .input label{display:block;font-size: 16px;line-height: 30px;font-weight: bold;}
 .form_wrap .input label + input{margin-top: 10px;}
 .form_wrap .pw_info{font-size: 14px; line-height: 30px;color: #a3abc4;}
+
+/* join */
+.join_wrap{}

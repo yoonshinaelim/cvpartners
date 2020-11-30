@@ -86,57 +86,35 @@
     <div class="container">
         <!-- cotnent -->
         <div class="content">
-            <div class="guide_wrap">
-                <div>
-                    <span class="input">
-                        <input type="text">
-                    </span>
-                </div>
-                <div>
-                    <span class="textarea" style="margin-top: 10px;">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </span>
-                </div>
-                <div>
-                    <span class="select" style="margin-top: 10px;">
-                        <select name="" id="">
-                            <option value="">선택</option>
-                            <option value="">선택</option>
-                            <option value="">선택</option>
-                        </select>
-                    </span>
-                </div>
-                <div>
-                    <span class="style_chk">
-                        <input type="checkbox" id="chk01" name="chk_box01" checked>
-                        <label for="chk01">checkbox01</label> 
-                    </span>
-                    <span class="style_chk">
-                        <input type="checkbox" id="chk02" name="chk_box01">
-                        <label for="chk02">checkbox02</label> 
-                    </span>
-                    <span class="style_chk">
-                        <input type="checkbox" id="chk03" name="chk_box01">
-                        <label for="chk03">checkbox03</label> 
-                    </span>
-                </div>
-                <div>
-                    <span class="style_rdo">
-                        <input type="radio" id="rdo01" name="rdo_box01" checked>
-                        <label for="rdo01">radio01</label> 
-                    </span>
-                    <span class="style_rdo">
-                        <input type="radio" id="rdo02" name="rdo_box01">
-                        <label for="rdo02">radio02</label> 
-                    </span>
-                </div>
-                <div>
-                    <div class="btn_area">
-                        <button class="button"><span>확인</span></button>
-                    </div>
-                    <div class="btn_area_100p">
-                        <button class="button"><span>확인</span></button>
-                        <button class="button"><span>확인</span></button>
+            <div class="join_wrap">
+                <p class="tit">회원가입</p>
+                <div class="tab_wrap">
+                    <ul class="tab_navi">
+                        <li class="on"><a href="#none">지원 내역</a></li>
+                        <li><a href="#none">나의 이력서</a></li>
+                        <li><a href="#none">공고 스크랩</a></li>
+                        <li><a href="#none">개인정보변경</a></li>
+                    </ul>
+                    <div class="tab_content" style="display:block;">tab_content01</div>
+                    <div class="tab_content">tab_content02</div>
+                    <div class="tab_content">tab_content03</div>
+                    <div class="tab_content">
+                        <p class="cont_tit">개인정보 확인 및 수정을 위해 <br/>
+                            로그인 하신 계정으로 인증을 한 번 더 진행하세요.</p>
+                        <div class="form_wrap">
+                            <span class="input">
+                                <label for="input01">아이디(이메일)</label>
+                                <input type="text" id="input01">
+                            </span>
+                            <span class="input">
+                                <label for="input01">비밀번호</label>
+                                <input type="password" id="input01">
+                                <p class="pw_info">※ 영어,숫자,특문 기준 8자 이상</p>
+                            </span>
+                            <div class="btn_area">
+                                <button class="button"><span>로그인</span></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -208,3 +186,21 @@
 <script src="../js/script.pub.js"></script>     <!-- 마지막에 위치해야함 -->
 </body>
 </html>
+
+<script>
+    $(function(){
+        var tab_btn = $('.tab_wrap .tab_navi li');
+        var tab_cont = $('.tab_wrap .tab_content');
+
+        tab_cont.hide();
+        tab_cont.eq(0).show();
+
+        tab_btn.on('click', function(){
+            var i=$(this).index();
+            tab_cont.hide();
+            tab_cont.eq(i).show();
+            tab_btn.removeClass('on');
+            $(this).addClass('on');
+        });
+    });
+</script>
