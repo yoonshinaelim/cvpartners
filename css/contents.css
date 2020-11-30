@@ -187,7 +187,7 @@
 .recruit_list_box.widetype .recruit_list .last .txt{font-size:24px;color:#666;}
 
 .big_title_area.sharetype{height:150px;background:#e11649;}
-.big_title_area.sharetype:before{content:'';display:block;height:150px;width:445px;position:absolute;left:50%;margin-left:-960px;background:url(../images/contents/bg_big_title.gif) no-repeat 0 0;width:}
+.big_title_area.sharetype:before{content:'';display:block;height:150px;width:445px;position:absolute;left:50%;margin-left:-960px;background:url(../images/contents/bg_big_title.gif) no-repeat 0 0;}
 .big_title_area.sharetype .cont{text-align:left;width:1030px;margin:0 auto;left:0;right:0;overflow:hidden;}
 .big_title_area.sharetype .tit{font-size:30px;float:left;}
 .big_title_area.sharetype .tit:after{display:none;}
