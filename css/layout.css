@@ -4,6 +4,7 @@
 .header {height:90px;border-bottom:1px solid #cfcfcf;position:absolute;width:100%;z-index:999;}
 .header .header_wrap{max-width:1170px;width:100%;margin:0 auto;height:90px;position:relative;}
 .header .logo{position:absolute;top:50%;margin-top:-15px;left:0;}
+.header .logo a{display:block;width:253px;height:32px;background:url(../images/common/h_logo.png) no-repeat 0 0;font-size:0;color:transparent;}
 .header .topmenu{position:absolute;top:50%;margin-top:-10px;right:155px;z-index:10;}
 .header .topmenu > li{float:left;margin-left:70px;position:relative;}
 .header .topmenu > li:first-child{margin-left:0;}
@@ -28,10 +29,17 @@
 .header .mypage .cont .box .list > li > a{color:#fff;font-size:18px;}
 .header .mypage .cont .box a.btn_modify{display:block;font-size:18px;margin-top:10px;color:#fff;}
 .header .mypage .cont .box a.btn_logout{color:#bfe10e;margin-top:20px;font-size:15px;border:1px solid #bfe10e;width:105px;height:30px;line-height:30px;text-align:center;display:inline-block;border-radius:15px;}
-
+/* white version */
+.header.white{border-bottom:0;}
+.header.white .logo a{background:url(../images/common/h_logo_w.png) no-repeat 0 0;}
+.header.white .topmenu > li > a{color:#fff;}
+.header.white .mypage .btn{color:#000;background:#fff;}
+.header.white .submenubox{background:transparent;}
+.header.white .submenu > li > a{color:#fff;}
 /* CONTENT */
 .container{width:100%;padding-top:90px;}
 .container .content{width:100%;}
+.white_ver{margin-top:-90px;}
 
 /* FOOT */
 .footer .foot_loaction{background:#5c5c5c;padding:45px 0;}
