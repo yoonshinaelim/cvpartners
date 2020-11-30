@@ -94,10 +94,10 @@
                         <li><a href="#none">공고 스크랩</a></li>
                         <li><a href="#none">개인정보변경</a></li>
                     </ul>
-                    <div class="tab_content">tab_content01</div>
+                    <div class="tab_content" style="display:block;">tab_content01</div>
                     <div class="tab_content">tab_content02</div>
                     <div class="tab_content">tab_content03</div>
-                    <div class="tab_content" style="display:block;">
+                    <div class="tab_content">
                         <p class="cont_tit">개인정보 확인 및 수정을 위해 <br/>
                             로그인 하신 계정으로 인증을 한 번 더 진행하세요.</p>
                         <div class="form_wrap">
@@ -111,8 +111,7 @@
                                 <p class="pw_info">※ 영어,숫자,특문 기준 8자 이상</p>
                             </span>
                             <div class="btn_area">
-                                <button class="btn"><span>로그인</span></button>
-                                <button class="btn"><span>로그인</span></button>
+                                <button class="button"><span>로그인</span></button>
                             </div>
                         </div>
                     </div>
@@ -192,8 +191,8 @@
         var tab_btn = $('.tab_wrap .tab_navi li');
         var tab_cont = $('.tab_wrap .tab_content');
 
-        //tab_cont.hide();
-        //tab_cont.eq(0).show();
+        tab_cont.hide();
+        tab_cont.eq(0).show();
 
         tab_btn.on('click', function(){
             var i=$(this).index();
