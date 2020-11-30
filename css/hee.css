@@ -1,0 +1,70 @@
+
+
+/* common */
+.guide_wrap{padding: 10px;}
+.guide_wrap > div{margin-top: 10px;}
+
+/* input */
+input{display:inline-block;width:100%;height:60px;border: 1px solid #c7c7c7;background: #fff;padding:0 15px;line-height:40px;box-sizing:border-box;outline:none;}
+
+/* select */
+select {width:100%;height:40px;padding:0px 40px 0px 15px;border: 1px solid #A6B9D6;background:#fff url(../../../images/site/kor/inc/selectbar_arrow_nomal.png) right 8px center no-repeat;appearance:none;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;box-sizing:border-box;outline:none;}
+select::-ms-expand {display:none;}
+select:hover{background-image:url(../../../images/site/kor/inc/selectbar_arrow_hover.png);border: 1px solid #4776EA;}
+select:focus{background-image:url(../../../images/site/kor/inc/selectbar_arrow_click.png);border: 1px solid #576170;}
+
+/* textarea */
+textarea{display:inline-block;width:100%;height:100%;border:1px solid #A6B9D6;background: #fff;padding:10px 15px;box-sizing:border-box;outline:none;}
+textarea:hover{border: 1px solid #4776EA;}
+textarea:focus{border: 1px solid #576170;}
+
+/* checkbox */
+.style_chk{margin-right:20px;}
+.style_chk input[type="checkbox"]{display:none;box-sizing:border-box;}
+.style_chk label{position:relative;display:inline-block;padding-left:40px;font-size:15px;margin-right:10px;box-sizing:border-box;}
+.style_chk input[type="checkbox"] + label:before{content:'';position:absolute;top:50%;left:0;margin-top:-12px;width:24px;height:24px;display:inline-block;background:url(../../../images/site/kor/inc/checkbox_nomal.png) center center no-repeat;}
+.style_chk input[type="checkbox"]:hover + label:before{background-image:url(../../../images/site/kor/inc/checkbox_hover.png);}
+.style_chk input[type="checkbox"]:checked + label:before{background-image:url(../../../images/site/kor/inc/checkbox_click.png);}
+
+/* radio */
+.style_rdo{margin-right:20px;}
+.style_rdo input[type="radio"]{display:none;box-sizing:border-box;}
+.style_rdo label{position:relative;display:inline-block;padding-left:40px;font-size:15px;margin-right:10px;box-sizing:border-box;}
+.style_rdo input[type="radio"] + label:before{content:'';position:absolute;top:50%;left:0;margin-top:-12px;width:24px;height:24px;display:inline-block;background:url(../../../images/site/kor/inc/radio_nomal.png) center center no-repeat;}
+.style_rdo input[type="radio"]:hover + label:before{background-image:url(../../../images/site/kor/inc/radio_hover.png);}
+.style_rdo input[type="radio"]:checked + label:before{background-image:url(../../../images/site/kor/inc/radio_click.png);}
+
+/* button */
+button{display:inline-block;cursor: pointer;outline:none;border:none;box-sizing:border-box;vertical-align: middle;}
+button span{vertical-align: middle;}
+.btn{height:36px;border-radius: 10px;color:#fff;font-size: 16px;padding:0 16px;}
+.btn_100P{width: 100%;}
+
+/* tab_wrap */
+.tab_wrap{width:1030px;margin: 0 auto;}
+.tab_wrap .tab_navi{display: flex;}
+.tab_wrap .tab_navi li{position:relative;flex: 1;text-align: center;font-size: 18px;padding-bottom: 20px;border-bottom:1px solid #4a4c58;}
+.tab_wrap .tab_navi li a{display: block;}
+.tab_wrap .tab_navi li:hover,
+.tab_wrap .tab_navi li.on{border-bottom:1px solid #ed174d;color: #ed174d;}
+.tab_wrap .tab_navi li:hover:before,
+.tab_wrap .tab_navi li.on:before{content:'';position:absolute;bottom:0;left:0;margin-top:-12px;width:100%;height:1px;display:inline-block;border-bottom:1px solid #ed174d;}
+
+/* mypage_wrap */
+.mypage_wrap{padding: 80px 0 0 0;background: #f8f8fc;}
+
+.mypage_wrap .tab_content{padding: 60px 0 0 0;}
+
+.mypage_wrap .tab_content .cont_tit{font-size: 24px;line-height: 36px;text-align: center;}
+.mypage_wrap .tab_content .form_wrap{padding: 60px 0 0 0;}
+
+/* form_wrap */
+.form_wrap{width: 320px;margin: 0 auto;}
+.form_wrap li{margin-top: 30px;}
+.form_wrap li:first-of-type{margin-top: 0;}
+.form_wrap .input{display:block;margin-top: 20px;}
+.form_wrap .input:first-of-type{margin-top: 0;}
+.form_wrap .input label{display:block;font-size: 16px;line-height: 30px;font-weight: bold;}
+.form_wrap .input label + input{margin-top: 10px;}
+.form_wrap .pw_info{font-size: 14px; line-height: 30px;color: #a3abc4;}
+{justify-content:space-between;}
