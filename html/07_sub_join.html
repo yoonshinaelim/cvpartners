@@ -90,32 +90,42 @@
                 <p class="tit">회원가입</p>
                 <div class="tab_wrap">
                     <ul class="tab_navi">
-                        <li class="on"><a href="#none">지원 내역</a></li>
-                        <li><a href="#none">나의 이력서</a></li>
-                        <li><a href="#none">공고 스크랩</a></li>
-                        <li><a href="#none">개인정보변경</a></li>
+                        <li class="on"><a href="#none">동의</a></li>
+                        <li><a href="#none">작성</a></li>
+                        <li><a href="#none">완료</a></li>
                     </ul>
-                    <div class="tab_content" style="display:block;">tab_content01</div>
-                    <div class="tab_content">tab_content02</div>
-                    <div class="tab_content">tab_content03</div>
-                    <div class="tab_content">
-                        <p class="cont_tit">개인정보 확인 및 수정을 위해 <br/>
-                            로그인 하신 계정으로 인증을 한 번 더 진행하세요.</p>
-                        <div class="form_wrap">
-                            <span class="input">
-                                <label for="input01">아이디(이메일)</label>
-                                <input type="text" id="input01">
+                    <div class="tab_content" style="display:block;">
+                        <div class="term_area">
+                            <p class="tit essen">개인정보 수집 및 이용 동의</p>
+                            <div class="cont"></div>
+                            <span class="style_chk">
+                                <input type="checkbox" id="chk01" name="chk_box01" checked>
+                                <label for="chk01">동의합니다.</label> 
                             </span>
-                            <span class="input">
-                                <label for="input01">비밀번호</label>
-                                <input type="password" id="input01">
-                                <p class="pw_info">※ 영어,숫자,특문 기준 8자 이상</p>
+                        </div>
+                        <div class="term_area">
+                            <p class="tit essen">민감정보 수집 및 이용 동의</p>
+                            <div class="cont"></div>
+                            <span class="style_chk">
+                                <input type="checkbox" id="chk02" name="chk_box01" checked>
+                                <label for="chk02">동의합니다.</label> 
                             </span>
-                            <div class="btn_area">
-                                <button class="button"><span>로그인</span></button>
-                            </div>
+                        </div>
+                        <div class="term_area">
+                            <p class="tit essen">민감정보 수집 및 이용 동의</p>
+                            <div class="cont"></div>
+                            <span class="style_chk">
+                                <input type="checkbox" id="chk03" name="chk_box01" checked>
+                                <label for="chk03">동의합니다.</label> 
+                            </span>
+                        </div>
+                        <div class="btn_area_100p">
+                            <button class="button btn_type02"><span>취소</span></button>
+                            <button class="button btn_type01"><span>다음</span></button>
                         </div>
                     </div>
+                    <div class="tab_content">tab_content01</div>
+                    <div class="tab_content">tab_content02</div>
                 </div>
             </div>
         </div>
