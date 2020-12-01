@@ -257,31 +257,3 @@
 <script src="../js/script.pub.js"></script>     <!-- 마지막에 위치해야함 -->
 </body>
 </html>
-
-<script>
-    $(function(){
-        var tab_btn = $('.tab_wrap .tab_navi li');
-        var tab_cont = $('.tab_wrap .tab_content');
-
-        tab_cont.hide();
-        tab_cont.eq(0).show();
-
-        tab_btn.on('click', function(){
-            var i=$(this).index();
-            tab_cont.hide();
-            tab_cont.eq(i).show();
-            tab_btn.removeClass('on');
-            $(this).addClass('on');
-        });
-
-        $('.btn_toggle button').on('click', function(){
-            if(!$(this).hasClass('on')){
-                $(this).addClass('on');
-                $(this).siblings('button').removeClass('on');
-            }else{
-                $(this).removeClass('on');
-                $(this).siblings('button').addClass('on');
-            }
-        });
-    });
-</script>
