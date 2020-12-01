@@ -118,6 +118,48 @@
                 });
             }
         }
+        gallery : {
+            var $gallerybox = $('.gallery_box');
+            var $count2 = $gallerybox.find('.count')
+            var $num2 = $gallerybox.find('.num')
+            var galleryThumbs = new Swiper('.gallery-thumbs', {
+                spaceBetween: 30,
+                slidesPerView:6,
+                freeMode: true,
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }
+              });
+              var galleryTop = new Swiper('.gallery-top', {
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+                thumbs: {
+                  swiper: galleryThumbs
+                },
+                on : {
+                    init : function(){
+                        var num = $('.gallery-top .swiper-slide').length;
+                        $num2.text(num);
+                        $count2.text(1);
+                    },
+                    slideChange : function(swiper){
+                        var idx = swiper.realIndex+1;
+                        $count2.text(idx);
+                    }
+                }
+            });
+            $gallerybox.find('.btn_next').on('click',function(){
+                galleryTop.slideNext();
+            });
+            $gallerybox.find('.btn_prev').on('click',function(){
+                galleryTop.slidePrev();
+            });
+        }
     }
     $.fn.map = function(){
         if($(document).width() > 960){
