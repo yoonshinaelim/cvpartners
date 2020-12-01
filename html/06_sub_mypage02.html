@@ -86,60 +86,107 @@
     <div class="container">
         <!-- cotnent -->
         <div class="content">
-            <div class="password_wrap">
-                <p class="tit">아이디 / 비밀번호  찾기</p>
+            <div class="mypage_wrap">
                 <div class="tab_wrap">
                     <ul class="tab_navi">
-                        <li class="on"><a href="#none">아이디 찾기</a></li><!-- 활성화시 클래스 'on' 추가 -->
-                        <li><a href="#none">비밀번호 찾기</a></li>
+                        <li class="on"><a href="#none">지원 내역</a></li><!-- 활성화시 클래스 'on' 추가 -->
+                        <li><a href="#none">나의 이력서</a></li>
+                        <li><a href="#none">공고 스크랩</a></li>
+                        <li><a href="#none">개인정보변경</a></li>
                     </ul>
+                    <div class="tab_content">tab_content01</div>
+                    <div class="tab_content">tab_content02</div>
+                    <div class="tab_content">tab_content03</div>
                     <div class="tab_content">
-                        <div class="form_wrap">
+                        <div class="form_wrap col2">
                             <span class="input">
-                                <label for="input01_01">이름</label>
-                                <input type="text" id="input01_01">
+                                <label for="input01">아이디(이메일)</label>
+                                <input type="text" id="input01">
                             </span>
                             <span class="input">
-                                <label for="input01_02">이메일</label>
-                                <input type="password" id="input01_02">
+                                <label for="input02">이름</label>
+                                <input type="text" id="input02">
                             </span>
                             <span class="input">
-                                <label for="input01_03">연락처</label>
-                                <input type="password" id="input01_03">
+                                <label for="input03">연락처</label>
+                                <input type="text" id="input03">
                             </span>
+                            <span class="input">
+                                <label for="input04">생년월일</label>
+                                <input type="text" id="input04">
+                            </span>
+                            <span class="input">
+                                <label for="input05">성별</label>
+                                <div class="btn_area_100p btn_toggle">
+                                    <button class="button on"><span>남</span></button>
+                                    <button class="button"><span>여</span></button>
+                                </div>
+                            </span>
+                            <div class="check_point">
+                                <span class="style_chk2">
+                                    <input type="checkbox" id="chk02_01" name="chk_box02" checked>
+                                    <label for="chk02_01">채용정보 서비스를 메일로 수신합니다.</label> 
+                                </span>
+                            </div>
+                            <div class="btn_area">
+                                <button class="button btn_type01"><span>수정</span></button>
+                            </div>
+                            <div class="btn_area txt_link">
+                                <a href="#none">비밀번호 변경</a>
+                                <a href="#none">아이디 / 비밀번호 찾기</a>
+                            </div>
                         </div>
-                        <div class="btn_area_100p">
-                            <button class="button btn_type01"><span>찾기</span></button>
-                        </div>
-                    </div>
-                    <div class="tab_content">
-                        <div class="form_wrap">
-                            <span class="input">
-                                <label for="input02_01">이름</label>
-                                <input type="text" id="input02_01">
-                            </span>
-                            <span class="input">
-                                <label for="input02_02">아이디</label>
-                                <input type="password" id="input02_02">
-                            </span>
-                            <span class="input">
-                                <label for="input02_03">이메일</label>
-                                <input type="password" id="input02_03">
-                            </span>
-                            <span class="input">
-                                <label for="input02_04">생년월일</label>
-                                <input type="password" id="input02_04">
-                            </span>
-                        </div>
-                        <div class="btn_area_100p">
-                            <button class="button btn_type01"><span>찾기</span></button>
-                        </div>
-                        <p class="password_noti">※ 본인의 이메일로 임시 비밀번호가 발송됩니다.</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- //cotnent -->
+        <div class="modal_wrap">
+            <div class="dimed"></div>
+            <div class="modal_area">
+                <div class="tit_area">
+                    <span>회원 탈퇴</span>
+                    <button class="btn_close"><span>닫기</span></button>
+                </div>
+                <div class="cont_area">
+                    <p class="tit">CV 파트너스 인재영입 홈페이지<br/>회원을 탈퇴 하시겠습니까?</p>
+                    <p class="txt">탈퇴하시면 지금까지 지원했던<br/>인재영입 정보를 포함한 개인 정보가 삭제되며<br/>홈페이지에서 제공하는 이벤트 및 행사 참여가<br/>불가능합니다.
+                    </p>
+                    <p class="imp_noti">※ 추후 같은 아이디로는 재가입이 불가능합니다.</p>
+                    <div class="btn_area">
+                        <button class="button btn_type02"><span>취소</span></button>
+                        <button class="button btn_type01"><span>확인</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_area">
+                <div class="tit_area">
+                    <span>비밀번호 변경</span>
+                    <button class="btn_close"><span>닫기</span></button>
+                </div>
+                <div class="cont_area">
+                    <div class="form_wrap">
+                        <span class="input">
+                            <label for="modal_input01">기존 비밀번호</label>
+                            <input type="password" id="modal_input01">
+                        </span>
+                        <span class="input">
+                            <label for="modal_input02">새 비밀번호</label>
+                            <input type="password" id="modal_input02">
+                            <p class="pw_info">※ 영어,숫자,특문 기준 8자 이상</p>
+                        </span>
+                        <span class="input">
+                            <label for="modal_input03">새 비밀번호 확인</label>
+                            <input type="password" id="modal_input03">
+                        </span>
+                    </div>
+                    <div class="btn_area">
+                        <button class="button btn_type02"><span>취소</span></button>
+                        <button class="button btn_type01"><span>등록</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- FOOT -->
     <div class="footer">
