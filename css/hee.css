@@ -36,10 +36,10 @@ textarea:focus{border: 1px solid #576170;}
 .style_chk3{margin-right:20px;}
 .style_chk3:last-of-type{margin-right:0;}
 .style_chk3 input[type="checkbox"]{display:none;box-sizing:border-box;}
-.style_chk3 label{position:relative;display:inline-block;padding-left:30px;font-size:15px;margin-right:10px;box-sizing:border-box;}
+.style_chk3 label{position:relative;display:inline-block;padding-left:30px;font-size:22px;margin-right:10px;box-sizing:border-box;color:#ed174d;font-weight:500;}
 .style_chk3 input[type="checkbox"] + label:before{content:'';position:absolute;top:50%;left:0;margin-top:-12px;width:24px;height:24px;display:inline-block;background:url(../../../images/site/kor/inc/checkbox_nomal.png) center center no-repeat;}
 .style_chk3 input[type="checkbox"]:hover + label:before{background-image:url(../../../images/site/kor/inc/checkbox_hover.png);}
-.style_chk3 input[type="checkbox"]:checked + label:before{background-image:url(/images/contents/checkbox_click.png);}
+.style_chk3 input[type="checkbox"]:checked + label:before{background-image:url(/images/contents/checkbox3_click.png);background-size:100%;}
 
 .check_point{text-align: center;border-top: 1px solid #bababd;margin-top: 30px;padding-top: 15px;}
 .check_point label{font-size: 18px;line-height: 30px;font-weight: 500;}
