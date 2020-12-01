@@ -110,7 +110,6 @@
             }else{
                 var challengeSlider = new Swiper('.challengeSlider', {
                     slidesPerView: '1',
-                    spaceBetween: 70,
                     centeredSlides: true,
                     pagination: {
                         el: '.swiper-pagination',
@@ -135,6 +134,17 @@
             });
         }
     }
+    $.fn.share = function(){
+        var $social = $('.social');
+        $social.each(function(){
+            $(this).find('.btn_share').on('mouseenter',function(){
+                $(this).find('+.sel').addClass('on');
+            });
+            $social.find('.sel').on('mouseleave',function(){
+                $(this).removeClass('on');
+            });
+        });
+    }
     $.fn.footer = function(){
         var $family = $('.family_link');
         $family.find('.btn').on('mouseenter',function(){
@@ -150,6 +160,7 @@ window.onload = function(){
     $.fn.topmenu();     //topmenu
     $.fn.swiper();      //swiper
     $.fn.map();         //map
+    $.fn.share();       //share button
     $.fn.footer();      //footer
 }
 window.onresize = function(){

@@ -52,6 +52,7 @@
 .recruit_challenge_box .cont{height:auto;position:relative;}
 .recruit_challenge_box .swiper_box{width:100%;float:none;}
 .challengeSlider{border-top:3px solid #ed174d;margin:0 20px;padding-bottom:40px;}
+.challengeSlider .swiper-wrapper{margin-left:0;}
 .challengeSlider .swiper-slide{width:auto;background:transparent;padding-bottom:20px;border-bottom:1px solid #d8d8d8;}
 .challengeSlider .swiper-slide.swiper-slide-active{width:auto;background:transparent;}
 .challengeSlider .swiper-slide .info{display:block;text-align:center;padding:20px 0;}
