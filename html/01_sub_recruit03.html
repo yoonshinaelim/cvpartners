@@ -266,17 +266,3 @@
 <script src="../js/script.pub.js"></script>     <!-- 마지막에 위치해야함 -->
 </body>
 </html>
-
-<script>
-    $(function(){
-        $('.btn_toggle button').on('click', function(){
-            if(!$(this).hasClass('on')){
-                $(this).addClass('on');
-                $(this).siblings('button').removeClass('on');
-            }else{
-                $(this).removeClass('on');
-                $(this).siblings('button').addClass('on');
-            }
-        });
-    });
-</script>
