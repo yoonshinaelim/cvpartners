@@ -170,15 +170,334 @@
                                         </li>
                                         <li class="w_100p">
                                             <label for="select03" class="essen">국적</label>
-                                            <div class="select second">
-                                                <select name="" id="select03">
-                                                    <option value="">선택</option>
-                                                    <option value="">선택</option>
-                                                    <option value="">선택</option>
-                                                </select>
-                                                <input type="text" id="input09">
+                                            <div class="second">
+                                                <span class="select left">
+                                                    <select name="" id="select03">
+                                                        <option value="">선택</option>
+                                                        <option value="">선택</option>
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                </span>
+                                                <span class="input right">
+                                                    <input type="text" id="input09">
+                                                </span>
                                             </div>
-                                            <div class="input second">
+                                        </li>
+                                        <li class="w_100p">
+                                            <label for="" class="essen">사진</label>
+                                            <div class="second">
+                                                <div class="img_box left">
+                                                    <img src="/images/contents/img_profile_photo.png" alt="">
+                                                </div>
+                                                <div class="left">
+                                                    <div class="btn_area">
+                                                        <button class="button btn_type03"><span>파일첨부</span></button>
+                                                    </div>
+                                                    <p class="txt_alert">※ 반드시 본인의 증명사진 또는 얼굴 위주로 편집 된 일반 사진을 첨부해주세요.</p>
+                                                    <p class="txt_alert">※ 사진은 가로 124px 세로 160px에 최적화 되어 있습니다.</p>
+                                                    <p class="txt_alert">※ GIF, JPG, PNG 파일만 등록 가능합니다. (10MB 이내)</p>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                        <li class="w_100p last">
+                                            <label for="input10" class="essen">주소</label>
+                                            <div class="second">
+                                                <span class="input center w_50p">
+                                                    <input type="text" id="input10">
+                                                    <button class="button btn_type03"><span>우편번호 찾기</span></button>
+                                                </span>
+                                                <span class="input center">
+                                                    <input type="text" id="input11">
+                                                </span>
+                                                <span class="input center">
+                                                    <input type="text" id="input12">
+                                                    <p class="txt_alert">※ 신분증 또는 법적으로 등록된 주소지를 기입하세요.</p>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>장애정보</dt>
+                                <dd>
+                                    <ul>
+                                        <li class="w_100p last">
+                                            <label for="" class="essen">장애여부</label>
+                                            <div class="second">
+                                                <div class="btn_area_100p btn_toggle left">
+                                                    <button class="button on"><span>남</span></button>
+                                                    <button class="button"><span>여</span></button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="select last">
+                                            <label for="select05" class="essen">장애 상세내역</label>
+                                            <select name="" id="select05">
+                                                <option value="">선택</option>
+                                                <option value="">선택</option>
+                                                <option value="">선택</option>
+                                            </select>
+                                        </li>
+                                        <li class="select last">
+                                            <label for="select04" class="essen">장애등급</label>
+                                            <select name="" id="select04">
+                                                <option value="">선택</option>
+                                                <option value="">선택</option>
+                                                <option value="">선택</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>병역정보</dt>
+                                <dd>
+                                    <ul>
+                                        <li class="w_100p">
+                                            <div class="btn_area_100p btn_toggle">
+                                                <button class="button on"><span>비대상</span></button>
+                                                <button class="button"><span>군필</span></button>
+                                                <button class="button"><span>미필</span></button>
+                                                <button class="button"><span>면제</span></button>
+                                                <button class="button"><span>복무 중</span></button>
+                                            </div>
+                                        </li>
+                                        <li class="w_100p last">
+                                            <label for="input13" class="essen">사유</label>
+                                            <div class="second">
+                                                <span class="input center">
+                                                    <input type="text" id="input13">
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="w_100p last">
+                                            <label for="input14" class="essen">제대일</label>
+                                            <div class="second">
+                                                <span class="input center w_50p">
+                                                    <input type="text" id="input14">
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>보훈여부</dt>
+                                <dd>
+                                    <ul>
+                                        <li class="w_100p last">
+                                            <label for="" class="essen">보훈여부</label>
+                                            <div class="second">
+                                                <div class="btn_area_100p btn_toggle left">
+                                                    <button class="button on"><span>남</span></button>
+                                                    <button class="button"><span>여</span></button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="input last">
+                                            <label for="input16" class="essen">본인과의 관계</label>
+                                            <input type="text" id="input16">
+                                        </li>
+                                        <li class="input last">
+                                            <label for="input17" class="essen">보훈번호입력</label>
+                                            <input type="text" id="input17">
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>학력정보</dt>
+                                <dd>
+                                    <ul>
+                                        <li class="w_100p">
+                                            <label for="select06" class="essen">최종학력</label>
+                                            <div class="second">
+                                                <span class="select left">
+                                                    <select name="" id="select06">
+                                                        <option value="">선택</option>
+                                                        <option value="">선택</option>
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                </span>
+                                                <span class="input right">
+                                                    <input type="text" id="input18">
+                                                </span>
+                                                <p class="txt_alert txt_red">※ 본인의 최종학력과 상태를 선택 후 아래 학력사항을 입력하세요.</p>
+                                                <p class="txt_alert txt_red">※ 편입 등으로 복수개의 학교를 재학한 경우 입학 날짜순으로 입력하세요.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="plus_box">
+                                        <li class="w_100p last">
+                                            <label for="select07" class="essen">학업과정</label>
+                                            <div class="second">
+                                                <span class="select left">
+                                                    <select name="" id="select07">
+                                                        <option value="">선택</option>
+                                                        <option value="">선택</option>
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                </span>
+                                                <span class="input right">
+                                                    <input type="text" id="input19">
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="input last">
+                                            <label for="input21" class="essen">전공</label>
+                                            <input type="text" id="input21">
+                                        </li>
+                                        <li class="input last">
+                                            <label for="input20" class="essen">학교명</label>
+                                            <input type="text" id="input20">
+                                        </li>
+                                        <li class="w_100p last">
+                                            <label for="input22" class="essen">재학기간</label>
+                                            <div class="second cal_area">
+                                                <div class="left cal">
+                                                    <span class="input left">
+                                                        <input type="text" id="input22">
+                                                    </span>
+                                                    <span class="select right">
+                                                        <select name="" id="select08">
+                                                            <option value="">선택</option>
+                                                            <option value="">선택</option>
+                                                            <option value="">선택</option>
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                                <div class="right cal">
+                                                    <span class="input left">
+                                                        <input type="text" id="input23">
+                                                    </span>
+                                                    <span class="select right">
+                                                        <select name="" id="select08">
+                                                            <option value="">선택</option>
+                                                            <option value="">선택</option>
+                                                            <option value="">선택</option>
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="btn_area plusbox_del last">
+                                            <button class="button btn_plusbox_del"><span>삭제</span></button>
+                                        </li>
+                                    </ul>
+                                    <div class="btn_area_100p last">
+                                        <button class="button btn_add"><span>+ 추가</span></button>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>경력사항</dt>
+                                <dd>
+                                    <ul class="plus_box">
+                                        <li class="w_100p last">
+                                            <label for="" class="essen">경력여부</label>
+                                            <div class="second">
+                                                <div class="btn_area_100p btn_toggle left">
+                                                    <button class="button on"><span>있음</span></button>
+                                                    <button class="button"><span>없음</span></button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="input last">
+                                            <label for="input24" class="essen">부서명</label>
+                                            <input type="text" id="input24">
+                                        </li>
+                                        <li class="input last">
+                                            <label for="input25" class="essen">회사명</label>
+                                            <input type="text" id="input25">
+                                        </li>
+                                        <li class="w_100p last">
+                                            <label for="input22" class="essen">재학기간</label>
+                                            <div class="second">
+                                                <div class="left cal_area cal2">
+                                                    <span class="input left">
+                                                        <input type="text" id="input22">
+                                                    </span>
+                                                    <span class="input right">
+                                                        <input type="text" id="input23">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="w_100p last">
+                                            <label for="input22" class="essen">담당업무 상세</label>
+                                            <div class="second">
+                                                <span class="textarea center">
+                                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                    <p class="textarea_noti">1/100(한글 1000자)</p>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="btn_area plusbox_del last">
+                                            <button class="button btn_plusbox_del"><span>삭제</span></button>
+                                        </li>
+                                    </ul>
+                                    <div class="btn_area_100p last">
+                                        <button class="button btn_add"><span>+ 추가</span></button>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>자기소개</dt>
+                                <dd>
+                                    <ul>
+                                        <li class="w_100p last">
+                                            <label for="input22" class="essen">본인이 생각하는 고객센터 업무란?</label>
+                                            <div class="second">
+                                                <span class="textarea center">
+                                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                    <p class="textarea_noti">1/100(한글 1000자)</p>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="w_100p last">
+                                            <label for="input22" class="essen">직장은 왜 필요하다고 생각하나요?</label>
+                                            <div class="second">
+                                                <span class="textarea center">
+                                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                    <p class="textarea_noti">1/100(한글 1000자)</p>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="w_100p last">
+                                            <label for="input22" class="essen">본인만의 스트레스 해소법은?</label>
+                                            <div class="second">
+                                                <span class="textarea center">
+                                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                    <p class="textarea_noti">1/100(한글 1000자)</p>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="w_100p last">
+                                            <label for="input22" class="essen">담당업무 상세</label>
+                                            <div class="second">
+                                                <span class="textarea center">
+                                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                    <p class="textarea_noti">1/100(한글 1000자)</p>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>추가자료</dt>
+                                <dd>
+                                    <ul>
+                                        <li class="w_100p last">
+                                            <label for="input10">2020년 건강검진증명서를 제출하세요.</label>
+                                            <div class="second">
+                                                <span class="input center w_50p">
+                                                    <input type="text" id="input10">
+                                                    <button class="button btn_type03"><span>파일첨부</span></button>
+                                                    <p class="txt_alert">※ 10MB 이내 / pdf, ppt, hwp, zip, word 파일만 등록 가능 </p>
+                                                </span>
                                             </div>
                                         </li>
                                     </ul>
