@@ -118,7 +118,7 @@
                 });
             }
         }
-        gallery : {
+        gallerySlider : {
             var $gallerybox = $('.gallery_box');
             var $count2 = $gallerybox.find('.count')
             var $num2 = $gallerybox.find('.num')
@@ -159,6 +159,18 @@
             $gallerybox.find('.btn_prev').on('click',function(){
                 galleryTop.slidePrev();
             });
+        }
+        viewSlider : {
+            var viewSlider = new Swiper('.swiper-container', {
+                pagination: {
+                  el: '.swiper-pagination',
+                  type: 'fraction',
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              });
         }
     }
     $.fn.map = function(){
@@ -226,6 +238,7 @@
 
 window.onload = function(){
     $.fn.topmenu();     //topmenu
+    $.fn.swiper();      //swiper
     $.fn.swiper();      //swiper
     $.fn.map();         //map
     $.fn.share();       //share button

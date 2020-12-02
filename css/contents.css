@@ -35,6 +35,8 @@
 .basic_title_area .tit:after{content:'';display:block;width:39px;height:2px;background:#000;margin:12px auto 10px;}
 .basic_title_area .txt{font-size:20px;}
 
+.basic_title_area.type2 .tit:after{background:#ed174d;}
+
 /* btn */
 .btn_circle{position:absolute;top:100px;right:-150px;background:url(../images/contents/btn_circle.png) no-repeat 0 0;width:125px;height:125px;display:inline-block;text-align:center;}
 .btn_circle span{font-size:16px;color:#fff;position:absolute;top:50%;margin-top:-20px;left:0;width:100%;}
@@ -47,12 +49,16 @@
 .btn_wrap a{display:inline-block;line-height:60px;width:140px;height:60px;box-sizing:border-box;text-align:center;border-radius:3px;font-size:16px;}
 .btn_wrap > a{margin:0 3px;}
 .btn_wrap .btn_list{color:#bfe10e;border:1px solid #bfe10e;width:140px;height:60px;box-sizing:border-box;text-align:center;}
+.btn_wrap .btn_list2{color:#000;border:1px solid #000;width:140px;height:60px;box-sizing:border-box;text-align:center;}
 .btn_wrap .btn_lime{background:#bfe10e;color:#000;}
 .btn_wrap .btn_cancel{background:#fff;border:1px solid #ed174d;border-radius:3px;color:#ed174d;}
 .btn_wrap .btn_cancel span{color:#ed174d;}
 .btn_wrap .btn_recruit{width:200px;background:#ed174d;color:#fff;}
 .btn_wrap .btn_recruit span{display:inline-block;padding-right:60px;position:relative;color:#fff;}
 .btn_wrap .btn_recruit span:after{content:'';display:block;position:absolute;width:38px;height:9px;top:6px;right:0;background:url(../images/contents/ico_arrow2.png) no-repeat 0 0;}
+.btn_wrap .btn_info{width:245px;color:#ed174d;border:1px solid #ed174d;}
+.btn_wrap .btn_info span{display:inline-block;padding-right:60px;position:relative;color:#ed174d;}
+.btn_wrap .btn_info span:after{content:'';display:block;position:absolute;width:38px;height:9px;top:6px;right:0;background:url(../images/contents/ico_arrow_on.png) no-repeat 0 0;}
 
 /* content */
 .content_box{width:100%;max-width:1170px;margin:0 auto;position:relative;min-height:500px;}
@@ -392,3 +398,43 @@
 .people_talent_box .talent_list > li .box .list li{font-size:18px;padding:45px 0;position:relative;font-weight:500;}
 .people_talent_box .talent_list > li .box .list li:before{content:'';display:block;width:7px;height:7px;border-radius:50%;background:#ed174d;position:absolute;top:23px;left:0;right:0;margin:0 auto;z-index:2;}
 .people_talent_box .talent_list > li .box .list li:after{content:'';display:block;width:1px;height:47px;border-radius:50%;background:#f4b3c4;position:absolute;top:-23px;left:0;right:0;margin:0 auto;z-index:1;}
+
+.people_interview_list{overflow:hidden;}
+.people_interview_list .list{margin-top:-75px;margin-left:-30px;overflow:hidden;}
+.people_interview_list li{text-align:center;width:270px;float:left;margin-left:30px;margin-top:75px;}
+.people_interview_list .img{display:block;width:270px;height:270px;border-radius:50%;overflow:hidden;border:4px solid #f5f5f5;}
+.people_interview_list .center{display:block;font-size:16px;color:#ed174d;margin-top:10px;}
+.people_interview_list .tit{display:block;font-size:16px;}
+.people_interview_list .tit .line{position:relative;display:inline-block;}
+.people_interview_list .tit .line:after{content:'';display:block;position:absolute;z-index:0;width:100%;padding:0 3px;left:3px;bottom:0;background:#bfe10e;height:14px;}
+.people_interview_list .tit .name{position:relative;margin-left:8px;font-size:22px;z-index:1;}
+.people_interview_list .btn_more{display:block;margin:0 auto;width:245px;border:1px solid #000;height:60px;line-height:60px;text-align:center;margin-top:80px;}
+.people_interview_list .btn_more span{display:inline-block;padding-right:60px;position:relative;}
+.people_interview_list .btn_more span:after{content:'';display:block;position:absolute;width:38px;height:9px;top:6px;right:0;background:url(../images/contents/ico_arrow_off.png) no-repeat 0 0;}
+
+.viewSlider{background:#fbfbfd;}
+.viewSlider:after{content:'';display:block;width:100%;height:6px;background:url(../images/contents/line_view.jpg) no-repeat center top;}
+.viewSlider .swiper-slide{height:659px;}
+.viewSlider .swiper-slide .box{width:100%;max-width:1170px;margin:0 auto;height:659px;background-position:right top;background-repeat:no-repeat;background-size:auto 100%;}
+.viewSlider .swiper-slide .box .mid{top:38%;}
+.viewSlider .swiper-slide .box span{display:block;}
+.viewSlider .swiper-slide .box .name{font-weight:bold;font-size:42px;}
+.viewSlider .swiper-slide .box .center{font-size:20px;color:#bfe10e;margin-top:10px;}
+.viewSlider .swiper-slide .box .txt{font-size:36px;color:#ed174d;margin-top:20px;line-height:50px;}
+.viewSlider .swiper-button-next{width:29px;height:29px;border:1px solid #ed174d;border-radius:50%;background:#fff url(../images/contents/ico_view_next.png) no-repeat center;top:auto;bottom:150px;left:50%;-webkit-transform:translateX(-500px);transform:translateX(-500px);}
+.viewSlider .swiper-button-prev{width:29px;height:29px;border:1px solid #ed174d;border-radius:50%;background:#fff url(../images/contents/ico_view_prev.png) no-repeat center;top:auto;bottom:150px;left:50%;-webkit-transform:translateX(-585px);transform:translateX(-585px);}
+.viewSlider .swiper-button-next.swiper-button-disabled{width:29px;height:29px;border:1px solid #d1d1dc;background:#d1d1dc url(../images/contents/ico_view_next_disabled.png) no-repeat center;border-radius:50%;}
+.viewSlider .swiper-button-prev.swiper-button-disabled{width:29px;height:29px;border:1px solid #d1d1dc;background:#d1d1dc url(../images/contents/ico_view_prev_disabled.png) no-repeat center;border-radius:50%;}
+.viewSlider .swiper-pagination{bottom:151px;display:inline-block;left:50%;-webkit-transform:translateX(-580px);transform:translateX(-580px);color:#888;width:100px;}
+.viewSlider .swiper-pagination .swiper-pagination-current{font-size:18px;color:#ed174d;font-weight:bold;}
+.viewSlider .swiper-pagination .swiper-pagination-total{font-size:18px;}
+.people_interview_table{margin-top:-60px;}
+.people_interview_table .list{overflow:hidden;border-bottom:1px solid #e1e1e3;}
+.people_interview_table .list li{display:table;width:100%;}
+.people_interview_table .list li .tit,.people_interview_table .list .txt{display:table-cell;}
+.people_interview_table .list li .tit{width:390px;padding-left:60px;background:#fbfbfd;}
+.people_interview_table .list li .tit .box{border-top:1px solid #e1e1e3;padding-top:60px;font-size:22px;font-weight:bold;}
+.people_interview_table .list li .tit .box .ico_q{color:#ed174d;font-size:30px;display:block;}
+.people_interview_table .list li:first-child .tit .box,
+.people_interview_table .list li:first-child .txt{border-top:0;}
+.people_interview_table .list li .txt{padding:60px;border-top:1px solid #e1e1e3;font-size:18px;color:#666;line-height:28px;}
