@@ -234,6 +234,26 @@
             }
         });
     }
+    $.fn.faq = function(){
+        var $sortList = $('.sort_list');
+        var $faqList = $('.faq_list');
+        $sortList.find('li').on('click',function(){
+            $sortList.find('li').removeClass('on');
+            $(this).addClass('on');
+        });
+        $faqList.find('dt').on('click',function(){
+            var boolean = $(this).hasClass('on');
+            $faqList.find('dt').removeClass('on');
+            $faqList.find('dd').hide();
+            if(!boolean){
+                $(this).addClass('on');
+                $(this).find('+dd').show();
+            }else{
+                $(this).removeClass('on');
+                $(this).find('+dd').hide();
+            }
+        });
+    }
 })(jQuery);
 
 window.onload = function(){
@@ -245,6 +265,7 @@ window.onload = function(){
     $.fn.footer();      //footer
     $.fn.tab();         //tab
     $.fn.toggle();      //toggle
+    $.fn.faq();         //faq list
 }
 window.onresize = function(){
     $.fn.topmenu();     //topmenu
