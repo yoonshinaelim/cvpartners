@@ -209,17 +209,17 @@
         });
     }
     $.fn.tab = function(){
-        var tab_btn = $('.tab_wrap .tab_navi li');
-        var tab_cont = $('.tab_wrap .tab_content');
+        var $tabBtn = $('.tab_wrap .tab_navi li');
+        var $tabCont = $('.tab_wrap .tab_content');
+        var idx = $('.tab_wrap .tab_navi li.on').index();
 
-        tab_cont.hide();
-        tab_cont.eq(0).show();
-
-        tab_btn.on('click', function(){
+        $tabCont.hide();
+        $tabCont.eq(idx).show();
+        $tabBtn.on('click', function(){
             var i=$(this).index();
-            tab_cont.hide();
-            tab_cont.eq(i).show();
-            tab_btn.removeClass('on');
+            $tabCont.hide();
+            $tabCont.eq(i).show();
+            $tabBtn.removeClass('on');
             $(this).addClass('on');
         });
     }

@@ -82,7 +82,7 @@ button span{display:block;}
 .tab_wrap .tab_navi li.on:before{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;display:inline-block;background: #ed174d;}
 
 /* form_wrap */
-.form_wrap{margin: 0 auto;}
+.form_wrap{margin: 0 auto;overflow:hidden;}
 .form_wrap ul{margin-top: -20px;}
 .form_wrap ul + ul{margin-top: 0;}
 .form_wrap .w_100p label,
@@ -133,6 +133,7 @@ button span{display:block;}
 .mypage_wrap .tab_content .form_wrap.col2 .txt_link{margin-top: 15px;}
 .mypage_wrap .tab_content .form_wrap.col2 .txt_link a{position:relative;display:inline-block;font-size: 16px;line-height: 30px;color: #ed174d;margin-left: 15px;padding-left: 15px;}
 .mypage_wrap .tab_content .form_wrap.col2 .txt_link a:first-of-type{margin-left: 0;padding-left: 0;}
+.mypage_wrap .tab_content .form_wrap.col2 .txt_link a:first-of-type:before{display:none;}
 .mypage_wrap .tab_content .form_wrap.col2 .txt_link a:before{content:'';position:absolute;top:50%;left:0;width:1px;height:10px;display:inline-block;background: #c6c6ca;margin-top: -5px;}
 
 /* join */

@@ -220,7 +220,8 @@ ul.txt_alert li{color:#ed174d;margin-top:5px;font-size:15px;padding-left:16px;te
 
 /* 지원하기 */
 .recruit_wrap .content_box{padding:100px 0;}
-.recruit_search_box{width:300px;float:left;background:#ed174d;border-radius:3px;overflow:hidden;}
+.recruit_l{width:300px;float:left;}
+.recruit_search_box{width:100%;background:#ed174d;border-radius:3px;overflow:hidden;}
 .recruit_search_box .cont{padding:45px 40px 0;}
 .recruit_search_box .cont .tit{color:#fff;font-size:18px;margin-bottom:50px;}
 .recruit_search_box .cont .tit strong{font-size:24px;color:#fff;}
@@ -233,7 +234,9 @@ ul.txt_alert li{color:#ed174d;margin-top:5px;font-size:15px;padding-left:16px;te
 .recruit_search_box .inp_box input[type="search"]:-ms-input-placeholder{color:#fff;}
 .recruit_search_box .btn_search{display:block;font-size:0;color:transparent;width:65px;height:65px;background:url(../images/contents/btn_search.png) no-repeat 0 0;margin:20px auto;}
 .recruit_search_box .btn_clear{display:block;height:70px;background:#bfe10e;width:100%;letter-spacing:0;text-decoration:underline;color:rgba(0,0,0,0.6);}
-.recruit_list_box.widetype{width:780px;float:right;}
+
+.recruit_r{width:780px;float:right;}
+.recruit_list_box.widetype{width:100%;}
 .recruit_list_box.widetype .txt{text-align:center;font-size:18px;margin-bottom:40px;}
 .recruit_list_box.widetype .txt .num{color:#ed174d;font-size:18px;}
 .recruit_list_box.widetype .recruit_list > li{width:100%;float:none;}
