@@ -13,9 +13,9 @@
 <body> 
 <div class="wrap">
     <!-- HEAD -->
-    <div class="header white"><!-- white haeder 버전 -->
+    <div class="header">
         <div class="header_wrap">
-            <h1 class="logo"><a href="#none">CV Partners 인재영입</a></h1>
+            <h1 class="logo"><a href="#none"><img src="../images/common/h_logo.png" alt="CV Partners 인재영입" /></a></h1>
             <a href="#none" class="btn_menu mb">메뉴</a>
             <div class="mb_menu">
                 <a href="#none" class="btn_close mb">닫기</a>
@@ -86,42 +86,17 @@
     <div class="container">
         <!-- cotnent -->
         <div class="content">
-            <div class="recruit_wrap white_ver"><!-- header white 버전일 때 white_ver 클래스 추가 -->
-                <div class="big_title_area recruit">
-                    <div class="cont">
-                        <h2 class="tit">채용 공고</h2>
-                        <p class="txt">열정을 가진 당신, 도전할 준비 되셨나요?</p>
-                    </div>
-                </div>
-                <div class="content_box">
-                    <div class="recruit_l">
-                        <div class="recruit_search_box">
-                            <div class="cont">
-                                <h3 class="tit">원하는 채용을<br><strong>한 번에 찾아보세요.</strong></h3>
-                                <div class="sel_box">
-                                    <select>
-                                        <option>센터</option>
-                                    </select>
-                                </div>
-                                <div class="sel_box">
-                                    <select>
-                                        <option>채용유형</option>
-                                    </select>
-                                </div>
-                                <div class="sel_box">
-                                    <select>
-                                        <option>근무형태</option>
-                                    </select>
-                                </div>
-                                <div class="inp_box"><input type="search" placeholder="대리점명" /></div>
-                                <button class="btn_search">찾기</button>
-                            </div>
-                            <button class="btn_clear">clear</button>
-                        </div>
-                    </div>
-                    <div class="recruit_r">
+            <div class="mypage_wrap">
+                <div class="tab_wrap">
+                    <ul class="tab_navi">
+                        <li><a href="#none">지원 내역</a></li><!-- 활성화시 클래스 'on' 추가 -->
+                        <li><a href="#none">나의 이력서</a></li>
+                        <li class="on"><a href="#none">공고 스크랩</a></li>
+                        <li><a href="#none">개인정보변경</a></li>
+                    </ul>
+                    <div class="tab_content">
                         <div class="recruit_list_box widetype">
-                            <p class="recruit_txt">총 <span class="num">100</span>개의 채용이 진행중입니다.</p>
+                            <p class="recruit_txt">총 <span class="num">10</span>개의 채용공고에 지원하셨습니다.</p>
                             <ul class="recruit_list">
                                 <li>
                                     <div class="box">
@@ -217,6 +192,7 @@
                                     </div>
                                 </li>
                                 <li>
+                                    <div class="end">전형 완료된 공고입니다.</div>
                                     <div class="box">
                                         <div class="top">
                                             <span class="loc kangwon">강원</span>
@@ -247,42 +223,8 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="box">
-                                        <div class="top">
-                                            <span class="loc honam">호남</span>
-                                            <span class="opt">신입/경력</span>
-                                            <div class="social">
-                                                <ul class="list">
-                                                    <li><a href="#none" class="btn_share">공유하기</a>
-                                                        <ul class="sel">
-                                                            <li><a href="#none">페이스북</a></li>
-                                                            <li><a href="#none">트위터</a></li>
-                                                            <li><a href="#none">카카오톡</a></li>
-                                                            <li><a href="#none">블로그</a></li>
-                                                            <li><a href="#none">카카오스토리</a></li>
-                                                            <li><a href="#none">이메일</a></li>
-                                                            <li><a href="#none">URL</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#none" class="btn_bookmark on">즐겨찾기</a></li><!-- 즐겨찾기 선택시, on 클래스 활성화 -->
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="tit_area">
-                                            <span class="tit"><a href="#none">LG헬로비전 고객센터 정규직 채용(일반상담) 1차</a></span>
-                                        </div>
-                                        <div class="info_area">
-                                            <span class="date">~2021.02.28<span class="day"><span class="num">D-3</span></span></span>
-                                            <span class="hire">계약직</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="last">
-                                        <strong class="tit">마지막 공고입니다.</strong>
-                                        <p class="txt">기다리시는 채용 공고가 곧 등록될 예정입니다.</p>
-                                    </div>
+                                <li class="last">
+                                    <p class="nodata">스크랩한 인재영입 공고가 없습니다.</p>
                                 </li>
                             </ul>
                         </div>
