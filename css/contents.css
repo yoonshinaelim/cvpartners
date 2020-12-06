@@ -387,7 +387,8 @@ ul.txt_alert li{color:#ed174d;margin-top:5px;font-size:15px;padding-left:16px;te
 .recruit_list_box.widetype .recruit_list .box .day{position:relative;display:inline-block;right:auto;margin-left:20px;color:#ed174d;padding:0 6px 1px;background:#fff;}
 .recruit_list_box.widetype .recruit_list .box .day.today{background:#bfe10e;}
 .recruit_list_box.widetype .recruit_list .box .day.today:after{display:none;}
-.recruit_list_box.widetype .recruit_list .last{text-align:center;padding:80px 0;margin-left:30px;}
+.recruit_list_box.widetype .recruit_list .last{text-align:center;padding:80px 0;}
+.recruit_list_box.widetype .recruit_list .last .nodata{margin-left:30px;}
 .recruit_list_box.widetype .recruit_list .last .tit{font-size:20px;}
 .recruit_list_box.widetype .recruit_list .last .txt{font-size:24px;color:#666;}
 
@@ -612,7 +613,7 @@ ul.txt_alert li{color:#ed174d;margin-top:5px;font-size:15px;padding-left:16px;te
 .mypage_wrap .recruit_list_box.widetype .dark_box .btn_area{margin-top:20px;text-align:left;}
 .mypage_wrap .recruit_list_box.widetype .dark_box .btn_area a{margin-left:6px;}
 .mypage_wrap .recruit_list_box.widetype .last .noda{padding:100px 0;font-size:18px;text-align:center;}
-.mypage_wrap .recruit_list_box.widetype .end{border-radius:3px;width:100%;background:rgba(255,255,255,0.8);text-align:center;height:100%;line-height:190px;font-size:26px;position:absolute;right:0;top:0;z-index:5;}
+.mypage_wrap .recruit_list_box.widetype .end{border-radius:3px;width:calc(100% - 30px);background:rgba(255,255,255,0.8);text-align:center;height:100%;line-height:190px;font-size:26px;position:absolute;right:0;top:0;z-index:5;}
 
 
 

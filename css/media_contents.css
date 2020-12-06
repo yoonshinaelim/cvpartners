@@ -88,7 +88,10 @@ ul.txt_alert li{font-size:14px;}
 .recruit_count_box .cont .count_list li .num{font-size:17px;}
 .recruit_list_box .cont{padding:40px 20px;}
 .recruit_list_box .cont .recruit_list li{float:none;width:100%;}
-.recruit_list_box .recruit_list .box{height:200px;margin-top:10px;}
+.recruit_list_box .recruit_list{margin:0;}
+.recruit_list_box .recruit_list > li{margin-top:20px;}
+.recruit_list_box .recruit_list > li:first-child{margin-top:0;}
+.recruit_list_box .recruit_list .box{height:200px;margin-top:10px;margin:0;}
 .recruit_list_box .recruit_list .box .top{padding:20px 20px 0;}
 .recruit_list_box .recruit_list .box .loc{width:56px;font-size:12px;height:20px;line-height:20px;}
 .recruit_list_box .recruit_list .box .tit_area{padding:10px 20px 0;}
@@ -100,7 +103,6 @@ ul.txt_alert li{font-size:14px;}
 .recruit_list_box .recruit_list .box .info_area{height:45px;}
 .recruit_list_box .recruit_list .box .info_area .date{top:12px;left:20px;font-size:13px;}
 .recruit_list_box .recruit_list .box .info_area .hire{top:12px;right:20px;font-size:13px;}
-.recruit_list_box .recruit_list li:last-child .box{background:#f8f8f8;border:none;}
 .recruit_list_box .regular_register{padding:30px 0 0;}
 .recruit_list_box .regular_register .tit{font-size:18px;}
 .recruit_list_box .regular_register .tit:before{width:31px;height:31px;background-size:100%;}
@@ -336,6 +338,43 @@ ul.txt_alert li{font-size:14px;}
 .notice_inquiry_box .textarea{height:150px;}
 
 .mypage_wrap{padding:40px 20px;}
+.mypage_wrap .tab_content{padding:40px 0 0;}
+.mypage_wrap .recruit_list_box.widetype .recruit_txt{font-size:15px;margin-bottom:20px;}
+.mypage_wrap .recruit_list_box.widetype{width:100%;}
+.mypage_wrap .recruit_list_box.widetype .dark_box{padding:20px;margin:0;}
+.mypage_wrap .recruit_list_box.widetype .dark_box .txt{font-size:16px;}
+.mypage_wrap .recruit_list_box.widetype .dark_box .btn_area{margin-top:10px;}
+.mypage_wrap .recruit_list_box.widetype .dark_box .btn_area a{font-size:14px;width:31%;height:35px;line-height:35px;margin-left:3px;}
+.mypage_wrap .recruit_list_box.widetype .dark_box .btn_area a:first-of-type{margin-left:0;}
+.mypage_wrap .recruit_list_box.widetype .end{font-size:22px;width:100%;}
+
+.mypage_wrap .tab_content .cont_tit{font-size:20px;line-height:28px;}
+.mypage_wrap .tab_content .form_wrap{width:100%;padding:20px 0 0;}
+.mypage_wrap .tab_content .form_wrap.col2{width:100%;}
+.mypage_wrap .tab_content .form_wrap.col2 .btn_area{margin-top:40px;}
+
+.join_wrap{padding:40px 20px;}
+.join_wrap .tab_wrap{width:100%;}
+.join_wrap .tit{font-size:22px;}
+.term_area .tit{font-size:16px;}
+.join_wrap .tab_content .form_wrap .btn_input .btn_type03 span{font-size:14px;padding:0 10px;}
+.join_wrap .tab_content .welcome_msg{padding:80px 0;}
+.join_wrap .tab_content .welcome_msg .tit{font-size:25px;}
+.join_wrap .tab_content .welcome_msg .txt1{font-size:18px;margin-top:30px;}
+.join_wrap .tab_content .welcome_msg .txt2{font-size:16px;margin-top:20px;}
+.join_wrap .tab_content .button span{font-size:16px;}
+
+.login_wrap{padding:40px 20px;}
+.login_wrap .form_wrap{width:100%;}
+.login_wrap .tit{font-size:22px;}
+.login_wrap .form_wrap{margin-top:20px;}
+
+.password_wrap{padding:40px 20px;}
+.password_wrap .tit{font-size:22px;}
+.password_wrap .tab_wrap{width:100%;}
+.password_wrap .form_wrap{margin-top:20px;}
+.password_wrap .button span{font-size:16px;}
+.password_wrap .password_noti{font-size:14px;}
 
 .tab_wrap .tab_navi li{font-size:16px;}
 .tab_wrap .tab_navi li:hover a, .tab_wrap .tab_navi li.on a{font-size:16px;}
