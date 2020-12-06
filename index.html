@@ -11,53 +11,366 @@
     *{padding:0;margin:0;}
 body,html{padding:0;margin:0;}
 ol,ul,li{list-style:none;}
-.tit_area{overflow:hidden;padding:30px;}
-.title{font-size:20px;float:left;}
-.countBox{float:right;}
-.countBox span{font-size:12px;border-radius:5px;width:50px;display:inline-block;height:30px;line-height:30px;text-align:center;}
+.tit_area{overflow:hidden;padding:30px;position:relative;}
+.title{font-size:30px;color:#252c41;}
+.countBox{font-size:12px;margin-top:30px;position:absolute;right:30px;bottom:10px;}
+.countBox .count{font-size:12px;}
+.countBox span{display:inline-block;margin-left:10px;}
+.countBox em{font-size:12px;font-style:normal;font-weight:bold;}
+.ico{font-size:11px;border-radius:5px;width:45px;display:inline-block;height:20px;line-height:20px;text-align:center;color:#fff;}
+.end{background:#f1404b;}
+.ing{background:#3b8686;}
+.none{background:#1f4e5f;}
+.list{width:100%;}
+.list thead th{background:#252c41;color:#fff;font-size:12px;padding:5px 0;text-align:center;}
+.list tbody td{background:#fff;color:#333;text-align:center;font-size:12px;padding:5px 0;}
+.list tbody td a{color:#333;font-weight:bold;}
+.list tbody tr:nth-child(odd) td{background:#f4f5f9;}
+.list .end:before{content:'완료';}
+.list .ing:before{content:'진행중';}
+.list .none:before{content:'보류';}
+.text{font-size:12px;text-align:right;color:#666;padding:10px 30px;}
 </style>
 <script>
 window.onload = function(){
     count();
 }
 function count(){
-    var list = document.getElementById('list');
-    var listLi = list.getElementsByTagName('li');
-    var count = listLi.length;
+    var table = document.getElementById('list');
+    var tbody = table.getElementsByTagName('tbody');
+    var countNum = table.getElementsByTagName('tr').length;
+    var ingNum = table.getElementsByClassName('ing').length;
+    var noneNum = table.getElementsByClassName('none').length;
+    var endNum = table.getElementsByClassName('end').length;
+    var countNumCon = document.getElementById('countNum');
+    var noneNumCon = document.getElementById('noneNum');
+    var ingNumCon = document.getElementById('ingNum');
+    var endNumCon = document.getElementById('endNum');
+
+    countNumCon.innerHTML = countNum - 1;
+    noneNumCon.innerHTML = noneNum;
+    ingNumCon.innerHTML = ingNum;
+    endNumCon.innerHTML = endNum;
+}
+function link(target){
+    var link = target.innerText;
+    window.open('about:blank').location.href= 'html/' + link;
 }
 </script>
 <body>
+    <!-- 
+        <<<상태>>>
+        진행중일 경우 : ico ing
+        보류일 경우 : ico none
+        완료일 경우 : ico end
+
+     -->
 <div class="tit_area">
     <h1 class="title">CV Partners</h1>
     <div class="countBox">
-        <span class="end">완료</span>
-        <span class="ing">진행중</span>
-        <span class="count">전체</span> : <em id="num"></em>
+        <span class="count">전체 : <em id="countNum"></em></span> 
+        <span class="ico ing">진행중</span> : <em id="ingNum"></em>
+        <span class="ico end">완료</span> : <em id="endNum"></em>
+        <span class="ico none">보류</span> : <em id="noneNum"></em>
     </div>
 </div>
 <div class="list_box">
-    <table class="list" id="list">
+    <table class="list" id="list" cellspacing="0" cellpadding="0">
+        <colgroup>
+            <col width="13%" span="4">
+            <col width="12%" >
+            <col width="*" >
+            <col width="10%" >
+            <col width="8%" >
+            <col width="8%" >
+        </colgroup>
         <thead>
             <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th>1Depth</th>
+                <th>2Depth</th>
+                <th>3Depth</th>
+                <th>4Depth</th>
+                <th>ID</th>
+                <th>파일명</th>
+                <th>상태</th>
+                <th>비고</th>
             </tr>
         </thead>
         <tbody>
             <tr>
+                <td>메인</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">01_main.html</a></td>
+                <td><span class="ico end"></span></td>
                 <td></td>
+            </tr>
+            <tr>
+                <td>채용공고</td>
+                <td>지원하기</td>
+                <td>리스트</td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">01_sub_recruit01.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>채용공고</td>
+                <td>지원하기</td>
+                <td>뷰</td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">01_sub_recruit02.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>채용공고</td>
+                <td>지원하기</td>
+                <td>작성</td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">01_sub_recruit03.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>채용공고</td>
+                <td>지원하기</td>
+                <td>최종제출</td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">01_sub_recruit04.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>채용공고</td>
+                <td>지원하기</td>
+                <td>확인</td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">01_sub_recruit05.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>채용공고</td>
+                <td>상시채용</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">01_sub_recruit06.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>워크</td>
+                <td>직무소개</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">02_sub_work01.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>워크</td>
+                <td>일과비전</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">02_sub_work02.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>라이프</td>
+                <td>근무환경</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">03_sub_life01.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>라이프</td>
+                <td>복리후생</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">03_sub_life02.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>피플</td>
+                <td>인재상</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">04_sub_people01.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>피플</td>
+                <td>직무인터뷰</td>
+                <td>리스트</td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">04_sub_people02_1.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>피플</td>
+                <td>직무인터뷰</td>
+                <td>뷰</td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">04_sub_people02_2.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>공지</td>
+                <td>공지</td>
+                <td>리스트</td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">05_sub_notice01_1.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>공지</td>
+                <td>공지</td>
+                <td>뷰</td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">05_sub_notice01_2.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>공지</td>
+                <td>자주하는 질문</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">05_sub_notice02.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>공지</td>
+                <td>이용문의</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">05_sub_notice03.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>마이페이지</td>
+                <td>지원내역</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">06_sub_mypage01.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>마이페이지</td>
+                <td>내이력서</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">06_sub_mypage02.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>마이페이지</td>
+                <td>스크랩</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">06_sub_mypage03.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>마이페이지</td>
+                <td>개인정보변경</td>
+                <td>로그인</td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">06_sub_mypage04_1.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>마이페이지</td>
+                <td>개인정보변경</td>
+                <td>변경</td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">06_sub_mypage04_2.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>가입</td>
+                <td>동의, 작성, 완료</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">07_sub_join.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>로그인</td>
+                <td>로그인, 아이디/비밀번호 찾기</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">08_sub_01_login.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>로그인</td>
+                <td>지원하기</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">08_sub_02_password.html</a></td>
+                <td><span class="ico end"></span></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>채용공고</td>
+                <td>약관</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="javascript:void(0);" onclick="link(this);">09_sub_agreement.html</a></td>
+                <td><span class="ico end"></span></td>
                 <td></td>
             </tr>
         </tbody>
     </table>
 </div>
+<p class="text">Coding by soulYK</p>
 </body>
 </html>
