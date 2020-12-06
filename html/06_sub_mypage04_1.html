@@ -86,38 +86,82 @@
     <div class="container">
         <!-- cotnent -->
         <div class="content">
-            <div class="notice_wrap">
-                <div class="content_box">
-                    <div class="tab_wrap">
-                        <ul class="tab_navi">
-                            <li class="on"><a href="#none">공지사항</a></li><!-- 활성화시 클래스 'on' 추가 -->
-                            <li><a href="#none">자주하는 질문</a></li>
-                            <li><a href="#none">사이트 이용 문의</a></li>
+            <div class="mypage_wrap">
+                <div class="tab_wrap">
+                    <ul class="tab_navi">
+                        <li><a href="#none">지원 내역</a></li><!-- 활성화시 클래스 'on' 추가 -->
+                        <li><a href="#none">나의 이력서</a></li>
+                        <li><a href="#none">공고 스크랩</a></li>
+                        <li class="on"><a href="#none">개인정보변경</a></li>
+                    </ul>
+                    <div class="tab_content">
+                        <p class="cont_tit">개인정보 확인 및 수정을 위해 <br/>
+                            로그인 하신 계정으로 인증을 한 번 더 진행하세요.</p>
+                        <ul class="form_wrap">
+                            <li class="input">
+                                <label for="input01">아이디(이메일)</label>
+                                <input type="text" id="input01">
+                            </li>
+                            <li class="input">
+                                <label for="input02">비밀번호</label>
+                                <input type="password" id="input02">
+                                <p class="pw_info">※ 영어,숫자,특문 기준 8자 이상</p>
+                            </li>
+                            <li class="btn_area_100p">
+                                <button class="button btn_type01"><span>로그인</span></button>
+                            </li>
                         </ul>
-                        <div class="tab_content" style="">
-                            <!-- view 영역-->
-                            <div class="notice_view_box">
-                                <div class="pink_box">서비스 일시중단 안내 8/13(목) 20:00 ~ 04:00</div>
-                                <div class="date">2020.11.03</div>
-                                <div class="cont">
-                                    <p style="text-align:center;">
-                                    아래와 같이 서버작업을 진행할 예정입니다. <br>
-                                    이에 따라 작업 시간 중 전체 서비스의 이용이 중단 될 수 있습니다. <br>
-                                    아래와 같이 서버작업을 진행할 예정입니다. <br>
-                                    이에 따라 작업 시간 중 전체 서비스의 이용이 중단 될 수 있습니다.  <br> <br>
-                                    작업 일시 : 12/13(목) 20:00 ~ 04:00  <br>
-                                    작업 내용 : 서버작업  <br>
-                                    중단 내용 : 전체 서비스 중단 및 접속 불가 </p>
-                                </div>
-                                <div class="btn_wrap t_center"><a href="#none" class="btn_list2">목록</a></div>
-                            </div>
-                            <!-- //view 영역-->
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- //cotnent -->
+        <div class="modal_wrap none">
+            <div class="dimed"></div>
+            <div class="modal_area">
+                <div class="tit_area">
+                    <span>회원 탈퇴</span>
+                    <button class="btn_close"><span>닫기</span></button>
+                </div>
+                <div class="cont_area">
+                    <p class="tit">CV 파트너스 인재영입 홈페이지<br/>회원을 탈퇴 하시겠습니까?</p>
+                    <p class="txt">탈퇴하시면 지금까지 지원했던<br/>인재영입 정보를 포함한 개인 정보가 삭제되며<br/>홈페이지에서 제공하는 이벤트 및 행사 참여가<br/>불가능합니다.
+                    </p>
+                    <p class="imp_noti">※ 추후 같은 아이디로는 재가입이 불가능합니다.</p>
+                    <div class="btn_area">
+                        <button class="button btn_type02"><span>취소</span></button>
+                        <button class="button btn_type01"><span>확인</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal_area">
+                <div class="tit_area">
+                    <span>비밀번호 변경</span>
+                    <button class="btn_close"><span>닫기</span></button>
+                </div>
+                <div class="cont_area">
+                    <ul class="form_wrap">
+                        <li class="input">
+                            <label for="modal_input01">기존 비밀번호</label>
+                            <input type="password" id="modal_input01">
+                        </li>
+                        <li class="input">
+                            <label for="modal_input02">새 비밀번호</label>
+                            <input type="password" id="modal_input02">
+                            <p class="pw_info">※ 영어,숫자,특문 기준 8자 이상</p>
+                        </li>
+                        <li class="input">
+                            <label for="modal_input03">새 비밀번호 확인</label>
+                            <input type="password" id="modal_input03">
+                        </li>
+                    </ul>
+                    <div class="btn_area">
+                        <button class="button btn_type02"><span>취소</span></button>
+                        <button class="button btn_type01"><span>등록</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- FOOT -->
     <div class="footer">

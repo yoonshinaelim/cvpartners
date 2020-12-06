@@ -62,7 +62,6 @@
             });
         }
         challengeSlider : {
-            if($(document).width() > 960){
                 var $challenge = $('.recruit_challenge_box .info_box');
                 var $count = $challenge.find('.fraction .count');
                 var $num = $challenge.find('.fraction .num');
@@ -71,7 +70,7 @@
                 var $name = $challenge.find('.name');
                 var challengeSlider = new Swiper('.challengeSlider', {
                     slidesPerView: 'auto',
-                    spaceBetween: 70,
+                    spaceBetween :70,
                     centeredSlides: true,
                     on : {
                         init : function(swiper){
@@ -107,16 +106,13 @@
                 $challenge.find('.btn_prev').on('click',function(){
                     challengeSlider.slidePrev();
                 });
-            }else{
-                var challengeSlider = new Swiper('.challengeSlider', {
-                    slidesPerView: '1',
-                    centeredSlides: true,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets',
-                    }
-                });
-            }
+        }
+        challengeSliderMb : {
+            var challengeSliderMb = new Swiper('.challengeSliderMb', {
+                pagination: {
+                el: '.swiper-pagination',
+                },
+            });
         }
         gallerySlider : {
             var $gallerybox = $('.gallery_box');
@@ -161,7 +157,7 @@
             });
         }
         viewSlider : {
-            var viewSlider = new Swiper('.swiper-container', {
+            var viewSlider = new Swiper('.viewSlider', {
                 pagination: {
                   el: '.swiper-pagination',
                   type: 'fraction',
@@ -211,16 +207,17 @@
     $.fn.tab = function(){
         var $tabBtn = $('.tab_wrap .tab_navi li');
         var $tabCont = $('.tab_wrap .tab_content');
-        var idx = $('.tab_wrap .tab_navi li.on').index();
-
+        var contNum = $tabCont.length;
         $tabCont.hide();
-        $tabCont.eq(idx).show();
+        $tabCont.eq(0).show();
         $tabBtn.on('click', function(){
-            var i=$(this).index();
-            $tabCont.hide();
-            $tabCont.eq(i).show();
-            $tabBtn.removeClass('on');
-            $(this).addClass('on');
+        var i=$(this).index();
+        $tabBtn.removeClass('on');
+        $(this).addClass('on');
+            if(contNum > 1){
+                $tabCont.hide();
+                $tabCont.eq(i).show();
+            }
         });
     }
     $.fn.toggle = function(){
@@ -269,5 +266,4 @@ window.onload = function(){
 }
 window.onresize = function(){
     $.fn.topmenu();     //topmenu
-    $.fn.swiper();      //swiper
 }
