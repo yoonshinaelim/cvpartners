@@ -1,1 +1,63 @@
-test..
+<!DOCTYPE html> 
+<html lang="ko"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no,email=no,address=no">
+<title>리스트</title> 
+</head>
+<style>
+    *{padding:0;margin:0;}
+body,html{padding:0;margin:0;}
+ol,ul,li{list-style:none;}
+.tit_area{overflow:hidden;padding:30px;}
+.title{font-size:20px;float:left;}
+.countBox{float:right;}
+.countBox span{font-size:12px;border-radius:5px;width:50px;display:inline-block;height:30px;line-height:30px;text-align:center;}
+</style>
+<script>
+window.onload = function(){
+    count();
+}
+function count(){
+    var list = document.getElementById('list');
+    var listLi = list.getElementsByTagName('li');
+    var count = listLi.length;
+}
+</script>
+<body>
+<div class="tit_area">
+    <h1 class="title">CV Partners</h1>
+    <div class="countBox">
+        <span class="end">완료</span>
+        <span class="ing">진행중</span>
+        <span class="count">전체</span> : <em id="num"></em>
+    </div>
+</div>
+<div class="list_box">
+    <table class="list" id="list">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

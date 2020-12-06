@@ -41,3 +41,9 @@
         src: url(./font/Montserrat-Bold.woff) format('woff'),
              url(./font/Montserrat-Bold.ttf) format('truetype');
 }
+@font-face {
+        font-family: 'SourceHanSerifK';
+        font-style: bold;
+        font-weight: 500;
+        src: url(./font/SourceHanSerifKR-Regular.otf) format('opentype');
+}
