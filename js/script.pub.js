@@ -107,27 +107,15 @@
                     challengeSlider.slidePrev();
                 });
         }
-        challengeSliderMb : {
-            var challengeSliderMb = new Swiper('.challengeSliderMb', {
-                pagination: {
-                el: '.swiper-pagination',
-                },
-            });
-        }
         gallerySlider : {
             var $gallerybox = $('.gallery_box');
             var $count2 = $gallerybox.find('.count')
             var $num2 = $gallerybox.find('.num')
             var galleryThumbs = new Swiper('.gallery-thumbs', {
-                spaceBetween: 30,
-                slidesPerView:6,
                 freeMode: true,
+                slidesPerView:'auto',
                 watchSlidesVisibility: true,
                 watchSlidesProgress: true,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                }
               });
               var galleryTop = new Swiper('.gallery-top', {
                 navigation: {
@@ -168,6 +156,13 @@
                 },
               });
         }
+    }
+    $.fn.swiperMb = function(){
+        var challengeSliderMb = new Swiper('.challengeSliderMb', {
+            pagination: {
+            el: '.swiper-pagination',
+            },
+        });
     }
     $.fn.map = function(){
         if($(document).width() > 960){
@@ -256,7 +251,7 @@
 window.onload = function(){
     $.fn.topmenu();     //topmenu
     $.fn.swiper();      //swiper
-    $.fn.swiper();      //swiper
+    $.fn.swiperMb();    //swiperMb
     $.fn.map();         //map
     $.fn.share();       //share button
     $.fn.footer();      //footer
