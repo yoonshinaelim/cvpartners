@@ -71,7 +71,6 @@ textarea{display:inline-block;width:100%;height:130px;border:1px solid #c7c7c7;b
 .form_wrap .input label + input,
 .form_wrap .select label + select{margin-top: 10px;}
 .form_wrap .pw_info{font-size: 14px; line-height: 30px;color: #a3abc4;}
-.form_wrap li:first-of-type label{margin-top:0;}
 /* col2 */
 .form_wrap.col2 ul{overflow: hidden;}
 .form_wrap.col2 li{float: left;width: 100%;border-bottom: 1px solid #e9e9eb;}
@@ -578,8 +577,8 @@ ul.txt_alert li{color:#ed174d;margin-top:5px;font-size:15px;padding-left:16px;te
 .viewSlider .swiper-button-next.swiper-button-disabled{width:29px;height:29px;border:1px solid #d1d1dc;background:#d1d1dc url(../images/contents/ico_view_next_disabled.png) no-repeat center;border-radius:50%;}
 .viewSlider .swiper-button-prev.swiper-button-disabled{width:29px;height:29px;border:1px solid #d1d1dc;background:#d1d1dc url(../images/contents/ico_view_prev_disabled.png) no-repeat center;border-radius:50%;}
 .viewSlider .swiper-pagination{bottom:151px;display:inline-block;left:50%;-webkit-transform:translateX(-580px);transform:translateX(-580px);color:#888;width:100px;}
-.viewSlider .swiper-pagination .swiper-pagination-current{font-size:18px;color:#ed174d;font-weight:bold;}
-.viewSlider .swiper-pagination .swiper-pagination-total{font-size:18px;}
+.viewSlider .swiper-pagination .swiper-pagination-current{font-size:18px;color:#ed174d;font-weight:bold;display:inline-block;padding:0 3px;}
+.viewSlider .swiper-pagination .swiper-pagination-total{font-size:18px;display:inline-block;padding:0 3px;}
 .people_interview_table{margin-top:-60px;}
 .people_interview_table .list{overflow:hidden;border-bottom:1px solid #e1e1e3;}
 .people_interview_table .list li{display:table;width:100%;}
@@ -670,7 +669,7 @@ ul.txt_alert li{color:#ed174d;margin-top:5px;font-size:15px;padding-left:16px;te
 
 /* term */
 .term_area{margin-top: 30px;}
-.term_area .tit{position:relative;font-size: 15px;line-height: 30px;text-align-last: left;}
+.term_area .tit{position:relative;font-size: 15px;line-height: 30px;text-align:left;}
 .term_area .tit.essen:before{content:'*';display:inline-block;font-size:15px;color: #ed174d;margin-right: 5px;}
 .term_area .cont{height:140px;border: 1px solid #c7c7c7;background: #fff;margin-top: 15px;padding:30px;overflow-y:auto;}
 .term_area .style_chk1{display:block;text-align: right;margin-top: 5px;}

@@ -52,60 +52,61 @@
                 loop: true,
                 spaceBetween: 30,
                 effect: 'fade',
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                autoplay : {
-                    delay: 5000,
-                },
+                speed: 1000,
+                autoplay : 3000,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
             });
         }
         challengeSlider : {
-                var $challenge = $('.recruit_challenge_box .info_box');
-                var $count = $challenge.find('.fraction .count');
-                var $num = $challenge.find('.fraction .num');
-                var $txt = $challenge.find('.txt');
-                var $company = $challenge.find('.company');
-                var $name = $challenge.find('.name');
-                var challengeSlider = new Swiper('.challengeSlider', {
-                    slidesPerView: 'auto',
-                    spaceBetween :70,
-                    centeredSlides: true,
-                    on : {
-                        init : function(swiper){
-                            var num = swiper.slides.length;
-                            var $active = $('.challengeSlider .swiper-slide-active');
-                            var txt = $active.find('.info .txt').text();
-                            var company = $active.find('.info .company').text();
-                            var name = $active.find('.info .name').text();
-                            $count.text(1);
-                            $num.text(num);
-                            $txt.text(txt);
-                            $company.text(company);
-                            $name.text(name);
-                        },
-                        slideChange : function(swiper){
-                            var idx = swiper.realIndex+1;
-                            $count.text(idx);
-                        },
-                        slideChangeTransitionStart :function(){
-                            var $active = $('.challengeSlider .swiper-slide-active');
-                            var txt = $active.find('.info .txt').text();
-                            var company = $active.find('.info .company').text();
-                            var name = $active.find('.info .name').text();
-                            $txt.text(txt);
-                            $company.text(company);
-                            $name.text(name);
-                        }
-                    }
-                });
-                $challenge.find('.btn_next').on('click',function(){
-                    challengeSlider.slideNext();
-                });
-                $challenge.find('.btn_prev').on('click',function(){
-                    challengeSlider.slidePrev();
-                });
+            var $challenge = $('.recruit_challenge_box .info_box');
+            var $count = $challenge.find('.fraction .count');
+            var $num = $challenge.find('.fraction .num');
+            var $txt = $challenge.find('.txt');
+            var $company = $challenge.find('.company');
+            var $name = $challenge.find('.name');
+            var challengeSlider = new Swiper('.challengeSlider', {
+                slidesPerView: 'auto',
+                spaceBetween :70,
+                centeredSlides: true,
+                onInit : function(swiper){
+                    var num = swiper.slides.length;
+                    var $active = $('.challengeSlider .swiper-slide-active');
+                    var txt = $active.find('.info .txt').text();
+                    var company = $active.find('.info .company').text();
+                    var name = $active.find('.info .name').text();
+                    $count.text(1);
+                    $num.text(num);
+                    $txt.text(txt);
+                    $company.text(company);
+                    $name.text(name);
+                },
+                onSlideChangeStart : function(swiper){
+                    var idx = swiper.realIndex+1;
+                    $count.text(idx);
+                },
+                onSlideChangeTransitionStart :function(){
+                    var $active = $('.challengeSlider .swiper-slide-active');
+                    var txt = $active.find('.info .txt').text();
+                    var company = $active.find('.info .company').text();
+                    var name = $active.find('.info .name').text();
+                    $txt.text(txt);
+                    $company.text(company);
+                    $name.text(name);
+                }
+            });
+            $challenge.find('.btn_next').on('click',function(){
+                challengeSlider.slideNext();
+            });
+            $challenge.find('.btn_prev').on('click',function(){
+                challengeSlider.slidePrev();
+            });
+            $(window).resize(function(){
+                winW = $(window).width();
+                if(winW > 1170){
+                    challengeSlider.slideTo(0);
+                }
+            });
         }
         gallerySlider : {
             var $gallerybox = $('.gallery_box');
@@ -118,24 +119,23 @@
                 watchSlidesProgress: true,
               });
               var galleryTop = new Swiper('.gallery-top', {
-                navigation: {
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                onInit : function(){
+                    var num = $('.gallery-top .swiper-slide').length;
+                    $num2.text(num);
+                    $count2.text(1);
                 },
-                thumbs: {
-                  swiper: galleryThumbs
-                },
-                on : {
-                    init : function(){
-                        var num = $('.gallery-top .swiper-slide').length;
-                        $num2.text(num);
-                        $count2.text(1);
-                    },
-                    slideChange : function(swiper){
-                        var idx = swiper.realIndex+1;
-                        $count2.text(idx);
-                    }
+                onSlideChangeStart : function(swiper){
+                    var idx = swiper.realIndex+1;
+                    $count2.text(idx);
+                    galleryThumbs.slideTo(idx - 1);
                 }
+            });
+            $('.gallery-thumbs .swiper-slide').on('click',function(){
+                var idx = $(this).index();
+                galleryTop.slideTo(idx);
+
             });
             $gallerybox.find('.btn_next').on('click',function(){
                 galleryTop.slideNext();
@@ -145,23 +145,26 @@
             });
         }
         viewSlider : {
+            var $count3 = $('.viewSlider .swiper-pagination-current');
+            var $num3 = $('.viewSlider .swiper-pagination-total');
             var viewSlider = new Swiper('.viewSlider', {
-                pagination: {
-                  el: '.swiper-pagination',
-                  type: 'fraction',
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                onInit: function(){
+                    var num = $('.viewSlider .swiper-slide').length;
+                    $num3.text(num);
+                    $count3.text(1);
                 },
-                navigation: {
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
-                },
+                onSlideChangeStart : function(swiper){
+                    var idx = swiper.realIndex+1;
+                    $count3.text(idx);
+                }
               });
         }
     }
     $.fn.swiperMb = function(){
         var challengeSliderMb = new Swiper('.challengeSliderMb', {
-            pagination: {
-            el: '.swiper-pagination',
-            },
+            pagination: '.swiper-pagination',
         });
     }
     $.fn.map = function(){
