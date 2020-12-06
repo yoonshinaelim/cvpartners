@@ -185,7 +185,7 @@
     $.fn.share = function(){
         var $social = $('.social');
         $social.each(function(){
-            $(this).find('.btn_share').on('mouseenter',function(){
+            $(this).find('.btn_share').on('click',function(){
                 $(this).find('+.sel').addClass('on');
             });
             $social.find('.sel').on('mouseleave',function(){
