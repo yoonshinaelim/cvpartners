@@ -7,8 +7,8 @@
         var $wrap = $('.wrap');
         var $topmenuCont = $topmenu.find('>li');
         if($(document).width() > 960){
-            $topmenuCont.find('.submenu').hide();
             $mbMenu.show();
+            $topmenuCont.find('.submenu').hide();
             $mypage.find('.cont').hide();
             $topmenuCont.on('mouseenter',function(){
                 $('.submenubox').remove();
@@ -16,7 +16,7 @@
                 $(this).find('.submenu').show();
                 $header.append('<div class="submenubox"></div>');
             });
-            $topmenuCont.find('.submenu').on('mouseleave',function(){
+            $topmenu.find('.submenu').on('mouseleave',function(){
                 reset();
             });
             $mypage.find('.btn').on('mouseenter',function(){
@@ -26,24 +26,28 @@
             $mypage.on('mouseleave',function(){
                 $(this).find('.cont').stop().fadeOut();
             });
-            function reset(){
-                $('.submenubox').remove();
-                $topmenuCont.find('.submenu').hide();
-            }
         }else{
+            $mypage.off();
             $mbMenu.hide();
-            $topmenuCont.find('.submenu').show();
+            $('.submenubox').remove();
+            $topmenuCont.off();
+            $wrap.removeClass('hidden');
+            $topmenu.find('.submenu').off();
+            $topmenu.find('.submenu').show();
             $mypage.find('.cont').show();
             $header.find('.btn_menu').on('click',function(){
-                $mbMenu.fadeIn();
+                $mbMenu.show();
                 $wrap.addClass('hidden');
-
             });
             $mbMenu.find('.btn_close').on('click',function(){
-                $mbMenu.fadeOut();
+                $mbMenu.hide();
                 $wrap.removeClass('hidden');
             });
             
+        }
+        function reset(){
+            $('.submenubox').remove();
+            $topmenuCont.find('.submenu').hide();
         }
     }
     $.fn.swiper = function(){
