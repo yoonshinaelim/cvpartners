@@ -6,6 +6,7 @@
         var $topmenu = $('.topmenu');
         var $wrap = $('.wrap');
         var $topmenuCont = $topmenu.find('>li');
+        $wrap.removeClass('hidden');
         if($(document).width() > 960){
             $mbMenu.show();
             $topmenuCont.find('.submenu').hide();
@@ -31,7 +32,6 @@
             $mbMenu.hide();
             $('.submenubox').remove();
             $topmenuCont.off();
-            $wrap.removeClass('hidden');
             $topmenu.find('.submenu').off();
             $topmenu.find('.submenu').show();
             $mypage.find('.cont').show();
