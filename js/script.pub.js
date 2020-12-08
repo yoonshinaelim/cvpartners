@@ -108,7 +108,7 @@
             $(window).resize(function(){
                 winW = $(window).width();
                 if(winW > 1170){
-                    challengeSlider.slideTo(0);
+                    challengeSlider.slideTo(0,0,true);
                 }
             });
         }
@@ -190,6 +190,7 @@
         var $social = $('.social');
         $social.each(function(){
             $(this).find('.btn_share').on('click',function(){
+                $social.find('.sel').removeClass('on');
                 $(this).find('+.sel').addClass('on');
             });
             $social.find('.sel').on('mouseleave',function(){
