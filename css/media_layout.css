@@ -1,4 +1,5 @@
 @media screen and (max-width:960px){
+.wrap{min-width: auto;}
 .mb{display:block;}
 .br{display:inline-block;width:3px;}
 .hidden{overflow:hidden;}

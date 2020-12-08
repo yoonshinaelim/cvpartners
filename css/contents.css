@@ -1,6 +1,6 @@
 /* common */
 * {word-break:keep-all;}
-.wrap{width:100%;overflow:hidden;}
+.wrap{width:100%;overflow:hidden;min-width: 1170px;}
 .guide_wrap{padding: 10px;}
 .guide_wrap > div{margin-top: 10px;}
 
