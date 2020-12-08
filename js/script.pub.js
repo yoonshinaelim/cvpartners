@@ -107,7 +107,7 @@
             });
             $(window).resize(function(){
                 winW = $(window).width();
-                if(winW > 1170){
+                if(winW > 960){
                     challengeSlider.slideTo(0,0,true);
                 }
             });
